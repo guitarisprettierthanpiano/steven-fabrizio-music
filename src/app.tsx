@@ -36,12 +36,15 @@ const App: React.FC = () => {
                     let myNewElement1 = document.createElement('h2');
                     myNewElement1.innerText = dataArray[i].title;
                     myNewPost.appendChild(myNewElement1);
-
-
-                    let myNewElement2 = document.createElement("ReactPlayer");
-                    myNewElement2.setAttribute('url', `${dataArray[i].url}`);
+                    
+                    let myNewElement2= document.createElement('iframe');
+                    myNewElement2.setAttribute('src', `${dataArray[i].url}`)
                     myNewPost.appendChild(myNewElement2);
 
+                    let myNewElement3=document.createElement('p');
+                    myNewElement3.innerText=dataArray[i].text;
+                    myNewPost.appendChild(myNewElement3);
+                    
                     myParentDiv.appendChild(myNewPost);
                     document.querySelector('#root').appendChild(myParentDiv);
                 }
