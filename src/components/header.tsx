@@ -5,6 +5,7 @@ const Header: React.FC = () => {
 
     return(
     <nav>
+    <h2>Steven Fabrizio</h2>
     <ul>
         <NavLink exact activeClassName='active' to='/'>
             <li>Home</li> 

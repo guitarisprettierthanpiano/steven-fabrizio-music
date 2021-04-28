@@ -4,6 +4,7 @@ const Gear: React.FC = () => {
 
     return(
     <>
+    <h1>YIIHTRO</h1>
     </>
     )
 }
