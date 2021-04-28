@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#root{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 40px;
+}
+/*HEADER*/
+nav{
+    grid-row: 1;
+}
+li{
+    list-style-type: none; 
+    display: inline;
+}
+
+/*MAIN*/
+
+/*FOOTER*/
+footer{
+    grid-row: 3;
+    background-color: black;
+}
