@@ -1,7 +1,5 @@
 import * as React from 'react';
-import { useState } from 'react';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import ReactPlayer from 'react-player';
 
 import Header from './components/header';
 
@@ -16,49 +14,9 @@ import Footer from './components/footer';
 
 const App: React.FC = () => {
 
-    const FetchFunction = () => {
-        let dataArray = [];
-        let i = 0;
-
-        fetch("../blog-data.json")
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(data) {
-                dataArray = data;
-
-                let myParentDiv = document.createElement('div');
-                myParentDiv.id='home'
-                for (i = 0; i < dataArray.length; i++){
-                    let myNewPost = document.createElement('div');
-
-
-                    let myNewElement1 = document.createElement('h2');
-                    myNewElement1.innerText = dataArray[i].title;
-                    myNewPost.appendChild(myNewElement1);
-                    
-                    let myNewElement2= document.createElement('iframe');
-                    myNewElement2.setAttribute('src', `${dataArray[i].url}`)
-                    myNewPost.appendChild(myNewElement2);
-
-                    let myNewElement3=document.createElement('p');
-                    myNewElement3.innerText=dataArray[i].text;
-                    myNewPost.appendChild(myNewElement3);
-                    
-                    myParentDiv.appendChild(myNewPost);
-                    document.querySelector('#root').appendChild(myParentDiv);
-                }
-            })
-    };
-    FetchFunction()
-
-
-
     return(
     <HashRouter>
-
         <Header />
-
         <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/gear' component={Gear}/>
@@ -66,9 +24,7 @@ const App: React.FC = () => {
             <Route path='/about' component={About}/>
             <Route path='/contact' component={Contact}/>
         </Switch>
-
         <Footer />
-
     </HashRouter>
     ); 
 }

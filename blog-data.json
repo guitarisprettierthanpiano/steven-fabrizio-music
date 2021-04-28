@@ -1,19 +1,16 @@
 [
- 
     {
         "title":"My Foolish Heart",
         "url":"https://www.youtube.com/embed/2Dl4Gteq_Ik",
-        "text":" lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
-        "nerdy-text":"lorem",
-        "date":"22"
+        "text":"lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
+        "nerdy-text":"nerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy text",
+        "date":"January 1, 2021"
     },
-    
     {
         "title":"When I Fall In Love",
-        "url":"https://www.bitchute.com/video/zeA7U9LZ2cJj/",
+        "url":"https://www.youtube.com/embed/GfAb0gNPy6s",
         "text":" lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
-        "nerdy-text":"lorem",
-        "date":"1111"
+        "nerdy-text":"nerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy text",
+        "date":"January 1, 2021"
     }
-
 ]
