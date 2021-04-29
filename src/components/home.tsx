@@ -32,6 +32,7 @@ const Home: React.FC = () => {
                     myNewElement1.innerText = dataArray[i].title;
                     myNewElement2.setAttribute('src', `${dataArray[i].url}`);
                     myNewElement2.setAttribute('data-aos', 'fade-up');
+                    myNewElement2.setAttribute('loading', 'lazy');
                     myNewElement3.innerText = dataArray[i].text;
                     myNewElement4.classList.add('influences');
                     myNewElement5.innerText = 'Posted on ' 
