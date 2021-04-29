@@ -2,11 +2,18 @@ import * as React from 'react';
 
 const Gear: React.FC = () => {
 
+    /*
+    let myArray = document.querySelectorAll('.specs');
+    console.log(myArray);
+
+    myArray.forEach(x => x.setAttribute('data-aos', 'fade-up'));
+    */
+   
     return( 
     <div id='gear'>
         <h1>Gear</h1>
-        <img src='../images/guitar2.png'/>
-        <h2>2010 Ibanez AF75</h2>
+        <img id='af75' src='../images/guitar2.png'/>
+        <h2 id='af75-h2'>2010 Ibanez AF75</h2>
         <div className='my-guitar'> 
             <div className='body'>
                 <h3>Body</h3>
@@ -74,8 +81,11 @@ const Gear: React.FC = () => {
                 </div>
             </div>
         </div>
+        <img id='focusrite'src='../images/focusrite.png'/>
+        <h2 id='fr-h2'>Focusrite Solo</h2>
     </div>
     )
+    
 }
 
 export default Gear;
