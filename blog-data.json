@@ -2,15 +2,75 @@
     {
         "title":"My Foolish Heart",
         "url":"https://www.youtube.com/embed/2Dl4Gteq_Ik",
-        "text":"lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
-        "nerdy-text":"nerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy text",
+        "text":"My Foolish Heart was one of the songs that got me into the American Songbook. I did not grow up around music like this. I discovered it later. The Bill Evans version from 1961 is gorgeous. The open string bass notes ringing out beneath heart-clenching diminished and diminished major-7 chords. Really beautiful and inspiring. My approach to this song is based off of his. Lots of diminished and altered dominant chords during the maudulin section setting up the bright happyish ending.",
+        "influences":{
+            "Bill Evans 1962":"https://youtu.be/g-jsW61e_-w",
+            "Bill Evans 1964":"https://youtu.be/2Dl4Gteq_Ik",
+            "Tony Bennett 1977":"https://youtu.be/TljjMBDJjMc?t=261"
+        },
         "date":"January 1, 2021"
     },
     {
         "title":"When I Fall In Love",
-        "url":"https://www.youtube.com/embed/GfAb0gNPy6s",
-        "text":" lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem",
-        "nerdy-text":"nerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy textnerdy text nerdy text",
+        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "text":"This is not one of my favorite songs. Every single singer makes it sound boring. The lyrics are okay. It was the instrumentalists that got me into this one. Those who really get creative with the harmony can make the melody pop out of the background. It is a love song so playing different kinds of chords can change the way the performance is felt. That is when I think this song is most powerful.",
+        "influences":{
+            "Nat King Cole 1957":"https://youtu.be/jnRzMETUUAI",
+            "Bill Evans 1963":"https://youtu.be/nIv9x2ya72s",
+            "Michael Bublé 2018":"https://youtu.be/d-GNag4m9tk"
+        },
+        "date":"January 1, 2021"
+    },
+    {
+        "title":"Almost Blue",
+        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "text":"Sometimes I do songs that people don't see coming. This is probably one of them. It is an Elvis Costello song. But it was played a lot by Chet Baker and more recently Elvis Costello's wife, Diana Krall. So it isn't exactly unknown in the jazz world. I tried to make the chords as interesting as possible. It is such a long and slow song though that there isn't really enough time for an improsived solo through a second time. But who says that you can't just play the song as it is and end it?",
+        "influences":{
+            "Chet Baker 1987":"https://youtu.be/z4PKzz81m5c",
+            "Diana Krall 2009":"https://youtu.be/_z7X8fbNIkI"
+        },
+        "date":"January 1, 2021"
+    },
+    {
+        "title":"Isn't It Romantic",
+        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "text":"This is one of those songs that is both fun to play and easy to listen to. It seems to be hard to mess it up because so many musicians and singers do a great job with this tune. I decided to play a short improsived intro. I was singing in my head \"Isn't it romantic, isn't it romantic...\" before launching into the melody. Instead of playing an improvised solo for the second time through in the same key, I key change and it sounds really fresh to me. The song is simply constructed with genius. I tried to bring us back to my original key to finish it.",
+        "influences":{
+            "Oscar Peterson 1959":"https://youtu.be/CMQVFXaFhJ8",
+            "Joe Pass 1998":"https://youtu.be/wrJRO39MCdE",
+            "Diana Krall 2017":"https://youtu.be/QKUa8OdXB64"
+        },
+        "date":"January 1, 2021"
+    },
+    {
+        "title":"What's New",
+        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "text":"I don't like this song. Why? It has to be the hardest song I've played. So many key changes that don't want a normal modulation. The lyrics are boring. Why did I play it? This is a Sinatra song and my family likes it. It is kind of that simple. Personally, I like the Linda Ronstadt version more than his too.",
+        "influences":{
+            "Frank Sinatra 1958":"https://youtu.be/SA64eS8eTEw",
+            "Linda Ronstadt 1983":"https://youtu.be/A5Rl8BSEdsE"
+        },
+        "date":"January 1, 2021"
+    },
+    {
+        "title":"Emily",
+        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "text":"What a masterpiece of modern composition. Every time I hear anyone perform this it sounds fresh and as if I've never heard it before. It seems all the big time singers and instrumentalists alike love this song. Such a surprising yet inviting key change to the viMajor in bar 9. I can ramble on forever about the genius here but I will say this: playing this song is a delight and it is in my permanent repertoire.",
+        "influences":{
+            "Tony Bennett 1966":"https://youtu.be/RCwyapWG63Y",
+            "Bill Evans 1967":"https://youtu.be/bf-KUlYLT1Y",
+            "Frank Sinatra 1977":"https://youtu.be/EgrtUeaTIjU"
+        },
+        "date":"January 1, 2021"
+    },
+    {
+        "title":"Una Voce Poco Fa",
+        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "text":"It really bothers me how no one gives opera a chance because it can have the highest highs of any art form. It was created by trained professional musicians who knew exactly what they were doing. Many arias are composed like proto-20th century tunes and the first part of Una Voce Poco Fa is one. You can treat it like a jazz standard and that is what I did here.",
+        "influences":{
+            "Anna Moffo":"https://youtu.be/i8CcmMXWmaA",
+            "Maria Callas":"https://youtu.be/5i3ymVnueIw"
+        },
         "date":"January 1, 2021"
     }
 ]

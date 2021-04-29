@@ -16,7 +16,7 @@ const Header: React.FC = () => {
         </NavLink>
 
         <NavLink activeClassName='active' to='/interesting'>
-            <li>Things I Find Interesting</li> 
+            <li>Interesting</li> 
         </NavLink>
 
         <NavLink activeClassName='active' to='/about'>
