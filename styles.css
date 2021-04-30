@@ -125,7 +125,7 @@ nav ul li{
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(9, auto);
+    grid-template-rows: repeat(10, auto);
 
     justify-content: center;
     align-content: center;
@@ -137,6 +137,7 @@ nav ul li{
     font-size: 48px;
     
     background-color: rgb(20, 20, 20);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.60);
 }
 #gear #af75{
     grid-row: 2;
@@ -186,12 +187,11 @@ nav ul li{
 #gear * .specs {
     display: grid;
     background-color: rgb(10, 10, 10);
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.637);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 #gear * .specs:hover{
     transform: scale(1.03);
     box-shadow: 3px 3px rgb(5, 5, 5);
-
 }
 #gear * span:first-child{
     color: rgb(243, 77, 0);
@@ -213,9 +213,12 @@ nav ul li{
 }
 #gear #focusrite{
     grid-row: 6;
-    width: 300px;
+    max-width: 300px;
     margin-bottom: 10px;
     justify-self: center;
+}
+#gear #focusrite:hover{
+    transform: scale(1.01) rotate(1deg);
 }
 #gear #fr-h2{
     grid-row: 7;

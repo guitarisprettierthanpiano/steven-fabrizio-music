@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Header: React.FC = () => {
 
     return(
-    <nav>
+    <nav id='top'>
     <h2>Steven Fabrizio</h2>
     <ul>
         <NavLink exact activeClassName='active' to='/'>

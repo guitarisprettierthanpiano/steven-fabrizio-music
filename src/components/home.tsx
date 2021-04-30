@@ -30,6 +30,8 @@ const Home: React.FC = () => {
 
                     myNewPost.classList.add('blog-entry');
                     myNewElement1.innerText = dataArray[i].title;
+                    myNewElement1.setAttribute('data-aos','flip-up');
+
                     myNewElement2.setAttribute('src', `${dataArray[i].url}`);
                     myNewElement2.setAttribute('data-aos', 'fade-up');
                     myNewElement2.setAttribute('loading', 'lazy');
