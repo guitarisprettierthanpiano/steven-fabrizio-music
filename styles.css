@@ -263,9 +263,72 @@ nav ul li{
     justify-self: center;
 }
 
-/*INTERESTING*/
-#interesting{
+/*SONGS*/
+#song-container{
     grid-row: 2;
+
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+
+    justify-content: center;
+    align-content: center;
+}
+#songs-container h1{
+    grid-row: 1;
+    margin: 20px;
+    padding: 20px;
+    font-size: 48px;
+    
+    background-color: rgb(20, 20, 20);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.60);
+}
+#songs-container .song-p{
+    grid-row: 2;
+    
+    background-color: rgb(20, 20, 20);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.637);
+    padding: 10px;
+    
+    margin-bottom: 20px;
+    max-width: 800px;
+    justify-self: center;
+    align-self: center;
+}
+#songs-container .songs{
+    grid-row: 3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    
+    background-color: rgb(20, 20, 20);
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.637);
+    padding: 5px;
+    
+    margin-bottom: 20px;
+    max-width: 1000px;
+    justify-self: center;
+}
+#songs-container .songs .bill{
+    grid-row: 1;
+    grid-column: 2;
+    background-image: url(../images/billy.jpg);
+    background-size: cover;
+}
+#songs-container .songs .maria{
+    grid-row: 2;
+    grid-column: 1;
+    background-image: url(../images/maria.jpg);
+    background-size: cover;
+    min-height: 400px ;
+}
+#songs-container .songs .tony{
+    grid-row: 3;
+    grid-column: 2;
+    
+    background-image: url(../images/tony.jpg);
+    background-size: cover;
+    min-height: 400px ;
 }
 
 /*FOOTER*/
