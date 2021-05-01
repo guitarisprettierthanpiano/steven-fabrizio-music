@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 
 const SongsToDo: React.FC = () => {
 
@@ -28,7 +29,7 @@ const SongsToDo: React.FC = () => {
             myH21.innerText='Standards'
             mySongUl1.appendChild(myH21);
             GenerateListsOfSongs(mySongUl1);
-            document.querySelector('#songs').appendChild(mySongUl1);
+            document.querySelector('.songs').appendChild(mySongUl1);
 
             //opera list
             standardsArray = data[1].opera.sort();
@@ -38,7 +39,7 @@ const SongsToDo: React.FC = () => {
             myH22.innerText = 'Opera';
             mySongUl2.appendChild(myH22);
             GenerateListsOfSongs(mySongUl2);
-            document.querySelector('#songs').appendChild(mySongUl2);
+            document.querySelector('.songs').appendChild(mySongUl2);
 
             //contemporary list
             standardsArray = data[2].contemporary.sort();
@@ -48,7 +49,7 @@ const SongsToDo: React.FC = () => {
             myH23.innerText='Contemporary'
             mySongDiv3.appendChild(myH23);
             GenerateListsOfSongs(mySongDiv3);
-            document.querySelector('#songs').appendChild(mySongDiv3);
+            document.querySelector('.songs').appendChild(mySongDiv3);
         });
     };
 
@@ -57,26 +58,47 @@ const SongsToDo: React.FC = () => {
         FetchListsOfSongs();
     };
 
+
+    const [inHover, setHover] = useState(false);
+    const [outHover, setHoover] = useState(true);
+
+    const StateFunctionA = () => {
+        setHover(true);
+        setHoover(false);
+    }
+    const StateFunctionB = () => {
+        setHover(false);
+        setHoover(true);
+    }
     return(
-    <div id='songs'>
+    <div id='songs-container'>
         <h1>Songs I Want To Do</h1>
-        <div className='maria'>
-            <h2>Maria Callas</h2>
-            <h3>Soprano Singer</h3>
-            <p>Music should be soft</p>
-            <p>Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft .</p>
-        </div>
-        <div className='bill'>
-            <h2>Bill Evans</h2>
-            <h3>Pianist</h3>
-            <p>i trust laymeni trust laymeni trust laymeni trust laymen </p>
-            <p>i trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymen.</p>
-        </div>
-        <div className='tony'>
-            <h2>Tony Bennett</h2>
-            <h3>Tenor Singer</h3>
-            <p>i trust laymeni trust laymeni trust laymeni trust laymen </p>
-            <p>i trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymen.</p>
+        <p className='song-p'>These are some songs that I'm interested in learning and then performing for YouTube. Some of them I may only fool around with for fun but I will post some of them on YouTube. I don't discriminate any genres. There is only good and bad music. If you have any ideas or suggestions post them below. I'm open minded</p>
+        <div className='songs'>
+            <div className='bill'
+                onMouseEnter={() => StateFunctionA()}
+                onMouseLeave={() => StateFunctionB()}>
+                <h2>Bill Evans</h2>
+                <h3>Pianist</h3>
+                <p className='billshow'>i trust laymeni trust laymeni trust laymeni trust laymen </p>
+
+                    {outHover && <p>start showing before mouseover</p>}
+                    {inHover && 
+                    <p className='billhide'>start hidden until mouserover</p>}
+
+            </div>
+            <div className='maria'>
+                <h2>Maria Callas</h2>
+                <h3>Soprano Singer</h3>
+                <p>Music should be soft</p>
+                <p>Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft .</p>
+            </div>
+            <div className='tony'>
+                <h2>Tony Bennett</h2>
+                <h3>Tenor Singer</h3>
+                <p>i trust laymeni trust laymeni trust laymeni trust laymen </p>
+                <p>i trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymen.</p>
+            </div>
         </div>
     </div>
     )

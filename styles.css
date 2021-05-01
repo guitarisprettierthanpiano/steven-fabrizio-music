@@ -41,7 +41,7 @@ nav{
 nav h2{
     grid-row: 1;
     font-size: 30px;
-}
+} 
 nav ul{
     grid-row: 2;
 

@@ -5,7 +5,7 @@ const Gear: React.FC = () => {
     return( 
     <div id='gear'>
         <h1>Gear</h1>
-        <img id='af75' src='../images/guitar2.png'/>
+        <img loading='lazy' id='af75' src='../images/guitar2.png'/>
         <h2 id='af75-h2'>2010 Ibanez AF75</h2>
         <div className='my-guitar'> 
             <div className='body'>
