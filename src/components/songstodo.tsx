@@ -51,7 +51,7 @@ const SongsToDo: React.FC = () => {
             GenerateListsOfSongs(mySongDiv3);
             document.querySelector('.songs').appendChild(mySongDiv3);
         });
-    };
+    }; 
 
     //generate list of songs if new page load
     if (document.querySelector('.song-name') === null){
@@ -73,7 +73,7 @@ const SongsToDo: React.FC = () => {
     return(
     <div id='songs-container'>
         <h1>Songs I Want To Do</h1>
-        <p className='song-p'>These are some songs that I'm interested in learning and then performing for YouTube. Some of them I may only fool around with for fun but I will post some of them on YouTube. I don't discriminate any genres. There is only good and bad music. If you have any ideas or suggestions post them below. I'm open minded</p>
+        <p className='songs-p'>These are some songs that I'm interested in learning. Some I will put on YouTube. Some of them I may only fool around with. I don't discriminate against any genres. There is only good and bad music. If you have any ideas or suggestions post them below.</p>
         <div className='songs'>
             <div className='bill'
                 onMouseEnter={() => StateFunctionA()}
@@ -84,18 +84,18 @@ const SongsToDo: React.FC = () => {
 
                     {outHover && <p>start showing before mouseover</p>}
                     {inHover && 
-                    <p className='billhide'>start hidden until mouserover</p>}
+                    <p className='billhide'>I believe in things that are developed through hard work. I always like people who have developed long and hard, especially through introspection and a lot of dedication. I think what they arrive at is usually a much deeper and more beautiful thing than the person who seems to have that ability and fluidity from the beginning. I say this because it's a good message to give to young talents who feel as I used to.</p>}
 
             </div>
             <div className='maria'>
                 <h2>Maria Callas</h2>
-                <h3>Soprano Singer</h3>
-                <p>Music should be soft</p>
-                <p>Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft Music should be osft .</p>
+                <h3>Soprano</h3>
+                <p>When music fails to agree to the ear, to soothe the ear and the heart and the senses, then it has missed the point.</p>
+                <p>When music fails to agree to the ear, to soothe the ear and the heart and the senses, then it has missed it's point. That is why I don't agree with modern music... Music should be essentially simple, and upon simplicity and beauty of line, it could become great.</p>
             </div>
             <div className='tony'>
                 <h2>Tony Bennett</h2>
-                <h3>Tenor Singer</h3>
+                <h3>Tenor</h3>
                 <p>i trust laymeni trust laymeni trust laymeni trust laymen </p>
                 <p>i trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymeni trust laymen.</p>
             </div>

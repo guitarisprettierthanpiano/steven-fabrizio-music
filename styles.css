@@ -17,7 +17,9 @@ li:hover, a:hover{
     font-weight: 600;
 }
 h1, h2, h3{
-    text-shadow: 1px rgb(8, 8, 8);
+    text-shadow: 2px rgb(8, 8, 8);
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 /*the container*/
@@ -36,7 +38,7 @@ nav{
     grid-template-rows: 50px 50px;
 
     justify-items: center;
-    background-color: brown;
+    background-color: crimson;
 }
 nav h2{
     grid-row: 1;
@@ -64,7 +66,7 @@ nav ul li{
 }
 
 /*HOME*/
-#home{
+#home-container{
     grid-row: 2;
 
     display: grid;
@@ -74,53 +76,120 @@ nav ul li{
     justify-content: center;
     align-content: center;
 }
-#home .main-section{
+#home-container .main-section{
     grid-row: 1;
-    background-color: rgb(119, 119, 119);
-    width: 100%;
+
+    display: grid;
+
     height: 600px;
+    max-width: 95vw;
+    grid-template-columns: 50px auto 50px;
+
+    margin: 10px;
+    
+    justify-self: center;
+    text-align: center;
 }
-#home .main-section h1{
+#home-container .main-section img{
+    max-height: 600px;
+    max-width: 900px;
+
+    grid-column: 2;
+    
+    top: 50%;
+    left: 50%;
+  
+    border-radius: 4px; 
+    filter:  brightness(120%) contrast(100%) invert(0%);
+    align-self: center;
+    justify-self: center;
+}
+
+#home-container .main-section h1{
+    
+  transform: translate(-50%, -50%);
     font-size: 40px;
+    
+  top: 50%;
+  left: 50%;
+    
+  position: absolute;
 }
-#home .blog-container{
+#home-container .main-section #btnone{
+    grid-column: 1;
+    
+    color:black;
+    
+  cursor: pointer;
+
+    align-self: center;
+    justify-self: end;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+#home-container .main-section #btntwo{
+    grid-column: 3;
+    color:black;
+    
+  cursor: pointer;
+    
+    align-self: center;
+    justify-self: start;
+    
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+}
+#home-container .main-section .carousel-indicator{
+transform: translate(-50%, -50%);
+position: absolute;
+    
+  top: 90%;
+  left: 50%; 
+}
+#home-container .main-section .carousel-indicator img{
+    height: 30px;
+    width: 30px;
+}
+#home-container .blog-container{
     max-width: 1000px;
     justify-self: center;
     background-color: rgb(20, 20, 20);
 }
-#home .blog-container .blog-entry{
+#home-container .blog-container .blog-entry{
     padding: 20px;
-    border-bottom: 2px black solid;
+    border-bottom: 1px black solid;
     display: grid;
 
     justify-items: center;
     align-items: center;
 }
-#home .blog-container .blog-entry *{
+#home-container .blog-container .blog-entry *{
     margin: 10px;
 }
-#home .blog-container .blog-entry li{
+#home-container .blog-container .blog-entry li{
     list-style-type: square;
 }
-#home .blog-container .blog-entry h2{  
+#home-container .blog-container .blog-entry h2{  
     font-size: 40px;
     letter-spacing: 2px;
 }
-#home .blog-container .blog-entry span{
+#home-container .blog-container .blog-entry span{
     justify-self: start;
     font-size: 14px;
 }
-#home .blog-container .blog-entry span:last-child{
+#home-container .blog-container .blog-entry span:last-child{
     color: rgb(209, 209, 209);
 }
-#home .blog-container .blog-entry iframe{
+#home-container .blog-container .blog-entry iframe{
     width: 600px;
     height: 400px;
     border: 4px double rgb(255, 255, 255);
 }
 
 /*GEAR*/
-#gear{
+#gear-container{
     grid-row: 2;
 
     display: grid;
@@ -130,7 +199,7 @@ nav ul li{
     justify-content: center;
     align-content: center;
 }
-#gear h1{
+#gear-container h1{
     grid-row: 1;
     margin: 20px;
     padding: 20px;
@@ -139,23 +208,23 @@ nav ul li{
     background-color: rgb(20, 20, 20);
     box-shadow: 2px 2px rgba(0, 0, 0, 0.60);
 }
-#gear #af75{
+#gear-container #af75{
     grid-row: 2;
     max-width: 950px;
     margin-bottom: 10px;
     justify-self: center;
 }
-#gear #af75:hover{
+#gear-container #af75:hover{
     transform: scale(1.01) rotate(-1deg);
 }
-#gear #af75-h2{
+#gear-container #af75-h2{
     grid-row: 3;
     max-width: 90vw;
     margin-bottom: 20px;
     font-size: 30px;
     justify-self: center;
 }
-#gear .my-guitar{
+#gear-container .my-guitar{
     grid-row: 4;
 
     display: grid;
@@ -169,14 +238,14 @@ nav ul li{
     max-width: 1000px;
     justify-self: center;
 }
-#gear * h3{
+#gear-container * h3{
     font-size: 24px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 4px;
 }
-#gear .my-guitar .body, 
-#gear .my-guitar .neck, 
-#gear .my-guitar .other{
+#gear-container .my-guitar .body, 
+#gear-container .my-guitar .neck, 
+#gear-container .my-guitar .other{
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -184,24 +253,24 @@ nav ul li{
 
     align-content: start;
 }
-#gear * .specs {
+#gear-container * .specs {
     display: grid;
     background-color: rgb(10, 10, 10);
     box-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
-#gear * .specs:hover{
+#gear-container * .specs:hover{
     transform: scale(1.03);
     box-shadow: 3px 3px rgb(5, 5, 5);
 }
-#gear * span:first-child{
+#gear-container * span:first-child{
     color: rgb(243, 77, 0);
     font-weight: 600;
 }
-#gear  *  span{
+#gear-container  *  span{
     margin: 4px;
     padding: 4px;
 }
-#gear .guitar-paragraph{
+#gear-container .guitar-paragraph{
     grid-row: 5;
     background-color: rgb(20, 20, 20);
     box-shadow: 2px 2px rgba(0, 0, 0, 0.637);
@@ -211,37 +280,39 @@ nav ul li{
     max-width: 1000px;
     justify-self: center;
 }
-#gear #focusrite{
+#gear-container #focusrite{
     grid-row: 6;
     max-width: 300px;
     margin-bottom: 10px;
     justify-self: center;
 }
-#gear #focusrite:hover{
+#gear-container #focusrite:hover{
     transform: scale(1.01) rotate(1deg);
 }
-#gear #fr-h2{
+#gear-container #fr-h2{
     grid-row: 7;
     max-width: 90vw;
     margin-bottom: 20px;
     font-size: 30px;
     justify-self: center;
 }
-#gear .my-focusrite{
+#gear-container .my-focusrite{
     grid-row: 8;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     
     background-color: rgb(20, 20, 20);
     box-shadow: 2px 2px rgba(0, 0, 0, 0.637);
     padding: 5px;
     
     margin-bottom: 20px;
-    max-width: 1000px;
+    width: auto;
     justify-self: center;
+
+    justify-content: center;
+    align-content: center;
 }
-#gear .my-focusrite .fr-specs{
+#gear-container .my-focusrite .fr-specs{
     grid-column: 2;
 
     display: grid;
@@ -251,7 +322,7 @@ nav ul li{
 
     align-content: start;
 }
-#gear .focusrite-paragraph{
+#gear-container .focusrite-paragraph{
     
     grid-row: 9;
     background-color: rgb(20, 20, 20);
@@ -264,17 +335,19 @@ nav ul li{
 }
 
 /*SONGS*/
-#song-container{
+#songs-container{
     grid-row: 2;
 
     display: grid;
     grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
 
     justify-content: center;
     align-content: center;
 }
 #songs-container h1{
     grid-row: 1;
+    grid-column: 1;
     margin: 20px;
     padding: 20px;
     font-size: 48px;
@@ -282,8 +355,9 @@ nav ul li{
     background-color: rgb(20, 20, 20);
     box-shadow: 2px 2px rgba(0, 0, 0, 0.60);
 }
-#songs-container .song-p{
+#songs-container .songs-p{
     grid-row: 2;
+    grid-column: 1;
     
     background-color: rgb(20, 20, 20);
     box-shadow: 2px 2px rgba(0, 0, 0, 0.637);
@@ -296,6 +370,7 @@ nav ul li{
 }
 #songs-container .songs{
     grid-row: 3;
+    grid-column: 1;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -303,7 +378,6 @@ nav ul li{
     
     background-color: rgb(20, 20, 20);
     box-shadow: 2px 2px rgba(0, 0, 0, 0.637);
-    padding: 5px;
     
     margin-bottom: 20px;
     max-width: 1000px;
@@ -312,23 +386,71 @@ nav ul li{
 #songs-container .songs .bill{
     grid-row: 1;
     grid-column: 2;
+    
+    padding: 20px;
+
+    min-height: 500px;
+
     background-image: url(../images/billy.jpg);
     background-size: cover;
+    
+    box-shadow: inset 0px 0px 800px 150px #000000;
 }
 #songs-container .songs .maria{
     grid-row: 2;
     grid-column: 1;
+    
+    padding: 20px;
+    
+    min-height: 500px;
+    
     background-image: url(../images/maria.jpg);
     background-size: cover;
-    min-height: 400px ;
+
+    box-shadow: inset 0px 0px 800px 150px #000000;
 }
 #songs-container .songs .tony{
     grid-row: 3;
     grid-column: 2;
+
+    padding: 20px;
     
     background-image: url(../images/tony.jpg);
     background-size: cover;
-    min-height: 400px ;
+    min-height: 500px ;
+    box-shadow: inset 0px 0px 800px 150px #000000;
+}
+#songs-container * ul{
+    align-self: center;
+    
+    margin: 20px;
+}
+#songs-container * h2{
+    padding-bottom: 10px;
+    
+    color: crimson;
+}
+#songs-container * li{
+    list-style-type: none;
+    align-self: center;
+    justify-self: center;
+
+    font-size: 18px;
+    padding: 3px;
+    padding-left: 20px;
+    
+}
+#songs-container * li:hover{
+    transform: scale(1.05);
+
+    text-shadow: 1px 1px rgb(5, 5, 5);
+    font-weight: 600;
+    text-indent: 8px;
+
+    background-color: crimson;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    max-width: 465px;
+
 }
 
 /*FOOTER*/

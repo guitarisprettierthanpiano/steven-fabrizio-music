@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 
 const Home: React.FC = () => {
 
@@ -33,7 +34,7 @@ const Home: React.FC = () => {
                 myNewElement1.setAttribute('data-aos','flip-up');
 
                 myNewElement2.setAttribute('src', `${dataArray[i].url}`);
-                myNewElement2.setAttribute('data-aos', 'fade-up');
+                //myNewElement2.setAttribute('data-aos', 'fade-up');
                 myNewElement2.setAttribute('loading', 'lazy');
                 myNewElement3.innerText = dataArray[i].text;
                 myNewElement4.classList.add('influences');
@@ -86,12 +87,60 @@ const Home: React.FC = () => {
         GenerateBlogs();
     };
 
+    let [imageURL, setImageURL] = useState('../images/1emily.png');
+    let [counter, setCounter] = useState<number>(2); 
+
+    const imageArray: Array<string> = [
+        '../images/0imafooltowantyou.png',
+        '../images/1emily.png',
+        '../images/2atimeforlove.png'
+    ];
+
+    const ChangeImageForward = () => {
+        
+        setImageURL(imageArray[counter]);
+        setCounter(Number(counter) + 1);
+        if (counter===2){setCounter(0)}
+    }
+    const ChangeImageBackward = () => {
+        setImageURL(imageArray[counter]);
+        setCounter(Number(counter) - 1);
+        if (counter===0){setCounter(2)}
+    }
+
     return(
-    <div id='home'>
-        <div className='main-section'>
+    <div id='home-container'>
+        <div 
+        className='main-section'>
+            <button 
+            onClick={() => ChangeImageBackward()}
+            id='btnone'>
+                &lt;
+            </button>
+            <img 
+            id='home-image' 
+            src={imageURL}/>
             <h1>
-                One Man. One Guitar. One Song.
+                {counter} 
+                <br/>
+                {imageURL}
             </h1>
+            <button 
+            onClick={() => ChangeImageForward()}
+            id='btntwo'>
+                &gt;
+            </button>
+            <div className='carousel-indicator'>
+                <img 
+                id='first-one' 
+                src='../images/whitecircle.png'/>
+                <img 
+                id='second-one' 
+                src='../images/blackcircle.png'/>
+                <img 
+                id='second-one' 
+                src='../images/blackcircle.png'/>
+            </div>
         </div>
         <div className='blog-container'>
         </div>

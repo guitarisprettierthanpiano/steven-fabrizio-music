@@ -3,7 +3,7 @@ import * as React from 'react';
 const Gear: React.FC = () => {
 
     return( 
-    <div id='gear'>
+    <div id='gear-container'>
         <h1>Gear</h1>
         <img loading='lazy' id='af75' src='../images/guitar2.png'/>
         <h2 id='af75-h2'>2010 Ibanez AF75</h2>
@@ -88,7 +88,7 @@ const Gear: React.FC = () => {
                 <div className='specs'>
                     <span data-aos='flip-up'>Outputs:</span>
                     <span data-aos='flip-up'>2 x ¼" speaker jacks</span>
-                    <span data-aos='flip-up'>¼" output jack(use 3.5mm headphone adapter)</span>
+                    <span data-aos='flip-up'>¼" output jack</span>
                 </div>
             </div>
         </div>
