@@ -93,8 +93,7 @@ const Gear: React.FC = () => {
             </div>
         </div>
         <p className='focusrite-paragraph'>This is the amplifier I use. I wish guitarists would ask themselves; what is the purpose of an amplifier? To amplify the natural acoustic sound of their instrument. Not suffocate it with generic trendy effects. That is all I look for with my Focusrite. It has no effects but I can plug headphones into it and hear latency-less amplification. But I can find pseudo-effects online If I did need to use them. I can digitally record with it. Yet the truth is I play unplugged most of the time anyway! Look at any of my uploaded videos and check if there is an amp on or headphones on. I like the acoustic sound of my guitar. But even when I plug it in I like the slight natural overdrive of the neck pickup that comes through the focusrite. If I were to get real serious as a musician I would upgrade this but I play just because it is fun and that is good enough for me.</p>
-        
-        <a href='#top'>wrewerwerre</a>
+
     </div>
     );
 };

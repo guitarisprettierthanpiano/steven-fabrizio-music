@@ -87,22 +87,27 @@ const Home: React.FC = () => {
 
     //i'm using this array to get the image name i'm changing the src to. using a counter to get the get array[counter] element.
     const imageArray: Array<string> = [
-        '../images/0imafooltowantyou.png',
-        '../images/1emily.png',
         '../images/2atimeforlove.png',
+        '../images/0imafooltowantyou.png',
+        '../images/1emilyB.png',
         '../images/whitecircle.png',
         '../images/blackcircle.png',
+        'One Man',
+        'One Guitar',
+        'One Vision'
     ];
 
     let [count, setCount] = 
     useState<number>(() => 0); 
-    let [imageURL, setImageURL] = useState<string>(() => '../images/0imafooltowantyou.png');
+    let [imageURL, setImageURL] = useState<string>(() => '../images/2atimeforlove.png');
     let [firstcircle, setFirstCircle] = 
     useState<string>(() => '../images/whitecircle.png')
     let [secondcircle, setSecondCircle] = 
     useState<string>(() => '../images/blackcircle.png')
     let [thirdcircle, setThirdCircle] = 
     useState<string>(() => '../images/blackcircle.png')
+    let [h1Text, setH1Text] =
+    useState<string>(() => 'One Man');
 
     const GenerateImageOne = () => {
         setImageURL(() => imageArray[1])   
@@ -110,6 +115,7 @@ const Home: React.FC = () => {
         setFirstCircle(() => imageArray[4])
         setSecondCircle(() => imageArray[3])
         setThirdCircle(() => imageArray[4])
+        setH1Text(() => imageArray[6])
     };
     const GenerateImageTwo = () => {
         setImageURL(() => imageArray[2])   
@@ -117,6 +123,7 @@ const Home: React.FC = () => {
         setFirstCircle(() => imageArray[4])
         setSecondCircle(() => imageArray[4])
         setThirdCircle(() => imageArray[3])
+        setH1Text(() => imageArray[7])
     };
     const GenerateImageZero = () => {
         setImageURL(() => imageArray[0])   
@@ -124,6 +131,7 @@ const Home: React.FC = () => {
         setFirstCircle(() => imageArray[3])
         setSecondCircle(() => imageArray[4])
         setThirdCircle(() => imageArray[4])
+        setH1Text(() => imageArray[5])
     };
     const ChangeImageForward = () => {
         switch (count){
@@ -158,13 +166,13 @@ const Home: React.FC = () => {
             id='btnone'>
                 &lt;
             </button>
-            <img 
-            id='home-image' 
-            src={imageURL}/>
+            <div className='img-container'>
+                <img 
+                id='home-image' 
+                src={imageURL}/>
+            </div>
             <h1>
-                {count} 
-                <br/>
-                {imageURL}
+                {h1Text}
             </h1>
             <button 
             onClick={() => ChangeImageForward()}
@@ -186,6 +194,7 @@ const Home: React.FC = () => {
                 onClick={() => GenerateImageTwo()}/>
             </div>
         </div>
+        <h1 className='showcase'>Showcase</h1>
         <div className='blog-container'>
         </div>
     </div>

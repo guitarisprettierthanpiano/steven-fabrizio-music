@@ -3,9 +3,13 @@ import * as React from 'react';
 const Footer: React.FC = () => {
 
     return(
-    <footer>
-        
-    </footer>
+    <div className='footer'>
+        <span 
+        style={{cursor:'pointer'}}
+        onClick={() => window.scrollTo({ top: 0, behavior:'smooth'})}>
+            Top
+        </span> 
+    </div>
     )
 }
 
