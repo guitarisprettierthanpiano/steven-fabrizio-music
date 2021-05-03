@@ -14,8 +14,7 @@ const Home: React.FC = () => {
 
             const myParentDiv:HTMLElement = document.querySelector('.blog-container');
                 
-            let i:number = 0; 
-            for (i = 0; i < dataArray.length; i++){
+            for (let i:number = 0; i < dataArray.length; i++){
                 let myNewPost:HTMLElement = 
                 document.createElement('div');
                 let myNewElement1:HTMLElement = 
@@ -53,8 +52,7 @@ const Home: React.FC = () => {
 
                 let myListElement:HTMLElement = 
                 document.createElement('ul');
-                let j:number = 0;
-                for (j = 0; j < myKeysArray.length; j++){
+                for (let j:number = 0; j < myKeysArray.length; j++){
                     let myNewAnchor:HTMLElement = 
                     document.createElement('a');
                     let myNewLi:HTMLElement = 
@@ -87,26 +85,69 @@ const Home: React.FC = () => {
         GenerateBlogs();
     };
 
-    let [imageURL, setImageURL] = useState('../images/1emily.png');
-    let [counter, setCounter] = useState<number>(2); 
-
+    //i'm using this array to get the image name i'm changing the src to. using a counter to get the get array[counter] element.
     const imageArray: Array<string> = [
         '../images/0imafooltowantyou.png',
         '../images/1emily.png',
-        '../images/2atimeforlove.png'
+        '../images/2atimeforlove.png',
+        '../images/whitecircle.png',
+        '../images/blackcircle.png',
     ];
 
+    let [count, setCount] = 
+    useState<number>(() => 0); 
+    let [imageURL, setImageURL] = useState<string>(() => '../images/0imafooltowantyou.png');
+    let [firstcircle, setFirstCircle] = 
+    useState<string>(() => '../images/whitecircle.png')
+    let [secondcircle, setSecondCircle] = 
+    useState<string>(() => '../images/blackcircle.png')
+    let [thirdcircle, setThirdCircle] = 
+    useState<string>(() => '../images/blackcircle.png')
+
+    const GenerateImageOne = () => {
+        setImageURL(() => imageArray[1])   
+        setCount(() => 1)
+        setFirstCircle(() => imageArray[4])
+        setSecondCircle(() => imageArray[3])
+        setThirdCircle(() => imageArray[4])
+    };
+    const GenerateImageTwo = () => {
+        setImageURL(() => imageArray[2])   
+        setCount(() => 2) 
+        setFirstCircle(() => imageArray[4])
+        setSecondCircle(() => imageArray[4])
+        setThirdCircle(() => imageArray[3])
+    };
+    const GenerateImageZero = () => {
+        setImageURL(() => imageArray[0])   
+        setCount(() => 0) 
+        setFirstCircle(() => imageArray[3])
+        setSecondCircle(() => imageArray[4])
+        setThirdCircle(() => imageArray[4])
+    };
     const ChangeImageForward = () => {
-        
-        setImageURL(imageArray[counter]);
-        setCounter(Number(counter) + 1);
-        if (counter===2){setCounter(0)}
-    }
+        switch (count){
+            case 2:
+                GenerateImageZero();
+                break;
+            case 1:
+                GenerateImageTwo();
+                break;
+            default:
+                GenerateImageOne();};
+    };
     const ChangeImageBackward = () => {
-        setImageURL(imageArray[counter]);
-        setCounter(Number(counter) - 1);
-        if (counter===0){setCounter(2)}
-    }
+        switch (count){
+            case 2:
+                GenerateImageOne() ;
+                break;
+            case 1:
+                GenerateImageZero() ;
+                break;
+            default:
+                GenerateImageTwo() ;};
+    };
+    
 
     return(
     <div id='home-container'>
@@ -121,7 +162,7 @@ const Home: React.FC = () => {
             id='home-image' 
             src={imageURL}/>
             <h1>
-                {counter} 
+                {count} 
                 <br/>
                 {imageURL}
             </h1>
@@ -132,14 +173,17 @@ const Home: React.FC = () => {
             </button>
             <div className='carousel-indicator'>
                 <img 
-                id='first-one' 
-                src='../images/whitecircle.png'/>
+                id='first-circle' 
+                src={firstcircle}
+                onClick={() => GenerateImageZero()}/>
                 <img 
-                id='second-one' 
-                src='../images/blackcircle.png'/>
+                id='second-circle' 
+                src={secondcircle}
+                onClick={() => GenerateImageOne()}/>
                 <img 
-                id='second-one' 
-                src='../images/blackcircle.png'/>
+                id='third-circle' 
+                src={thirdcircle}
+                onClick={() => GenerateImageTwo()}/>
             </div>
         </div>
         <div className='blog-container'>

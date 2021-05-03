@@ -100,11 +100,14 @@ nav ul li{
     left: 50%;
   
     border-radius: 4px; 
-    filter:  brightness(120%) contrast(100%) invert(0%);
+    filter:  
+        brightness(100%) 
+        contrast(300%) 
+        invert(000%) 
+        grayscale(100%);
     align-self: center;
     justify-self: center;
 }
-
 #home-container .main-section h1{
     
   transform: translate(-50%, -50%);
@@ -112,6 +115,8 @@ nav ul li{
     
   top: 50%;
   left: 50%;
+  color: black;
+  text-shadow: 2px 2px rgb(109, 109, 109);
     
   position: absolute;
 }
@@ -145,12 +150,17 @@ nav ul li{
 transform: translate(-50%, -50%);
 position: absolute;
     
-  top: 90%;
+  top: 92%;
   left: 50%; 
 }
 #home-container .main-section .carousel-indicator img{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
+    opacity: 80%;
+    
+    margin: 10px;
+
+    cursor: pointer;
 }
 #home-container .blog-container{
     max-width: 1000px;
