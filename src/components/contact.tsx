@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
             <ContactForm />
             <div className='crypto'>
                 <p>
-                    You can donate to me BTC or ETH.
+                    You can donate BTC or ETH to me.
                 </p>
                 <p>
                     Click an address to copy it.<br/><br/>    

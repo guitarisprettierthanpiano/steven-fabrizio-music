@@ -12,6 +12,7 @@ p, span, button, input, textarea, label{
     font-size: 20px;
     text-align: justify;
     
+    
     text-shadow: 1px 1px rgba(0, 0, 0, 0.466);
 }
 li:hover, a:hover{
@@ -158,6 +159,8 @@ nav ul li{
     color:red;
     border: 2px black solid;
     
+    
+    text-align: center;
   cursor: pointer;
 
     align-self: center;
@@ -177,6 +180,7 @@ nav ul li{
     
     align-self: center;
     justify-self: start;
+    text-align: center;
     
     margin: 5px;
     
