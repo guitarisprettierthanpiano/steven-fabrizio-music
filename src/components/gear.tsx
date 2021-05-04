@@ -5,8 +5,8 @@ const Gear: React.FC = () => {
     return( 
     <div id='gear-container'>
         <h1>Gear</h1>
-        <img loading='lazy' id='af75' src='../images/guitar2.png'/>
-        <h2 id='af75-h2'>2010 Ibanez AF75</h2>
+        <img loading='lazy' id='af75' src='../images/guitar3.png'/>
+        <h2 id='af75-h2'>2010 Ibanez AF75 BS</h2>
         <div className='my-guitar'> 
             <div className='body'>
                 <h3>Body</h3>
@@ -74,7 +74,7 @@ const Gear: React.FC = () => {
                 </div>
             </div>
         </div>
-        <p className='guitar-paragraph'>Yup. An AF75. Many guitarists scoff at this instrument. But this guitar has the same materials as the acclaimed ES-175. Maple back and sides, mahogany neck, rosewood fretboard. It is the new AF75s that are pathetic with their nyatoh, linden and laurel. My guitar has flatwound 12s with lowish action. I can truly say it doesn't fight me when I play it and that is priceless. It can sound uneven but if I were to upgrade to another guitar with the same materials it would cost a lot. I am satisfied with what it is.</p>
+        <p className='guitar-paragraph'>Yup. An AF75. This guitar has the same materials as the praised ES-175. Maple back and sides, mahogany neck, rosewood fretboard. It is the new AF75s that are pathetic with their nyatoh, linden and laurel. The one in the image looks like a newer one(look at the reddish fretboard). My guitar has flatwound 12s with lowish action. I can truly say it doesn't fight me when I play it and that is priceless. It can sound uneven but if I were to upgrade to another guitar with the same materials it would cost a lot. I am satisfied with what it is.</p>
         <img loading="lazy" id='focusrite'src='../images/focusrite.png'/>
         <h2 id='fr-h2'>Focusrite Solo</h2>
         <div className='my-focusrite'>

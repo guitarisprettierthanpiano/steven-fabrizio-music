@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
     return(
         <div id='contact-container'>
             <h1>Contact</h1>
-            <p className='contact-desc'>This is a contact form. You can say anything you like. About my playing, if you have song recommendations or even about this website. You can put any valid e-mail address below to be anonymous. I personally have used noob@aol.com since I was a kid. That guy probably hates me.
+            <p className='contact-desc'>This is a contact form. You can say anything you like. About my playing, if you have song recommendations or even about this website. You can use any valid e-mail address below to be anonymous. I personally have used noob@aol.com since I was a kid. That guy probably hates me.
             </p>
             <ContactForm />
             <div className='crypto'>
