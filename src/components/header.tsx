@@ -5,7 +5,7 @@ const Header: React.FC = () => {
 
     return(
     <nav id='top'>
-    <h2>Steven Fabrizio</h2>
+    <h2>Steven Fabrizio Music</h2>
     <ul>
         <NavLink exact activeClassName='active' to='/'>
             <li>Home</li> 

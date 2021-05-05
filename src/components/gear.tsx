@@ -74,7 +74,7 @@ const Gear: React.FC = () => {
                 </div>
             </div>
         </div>
-        <p className='guitar-paragraph'>Yup. An AF75. This guitar has similar dimensions and the same materials as the popular ES-175. Maple back and sides, mahogany neck, rosewood fretboard. Only the newer AF75s are pathetic. Laurel, linden and walnut. Yuck. The one in the image looks like a newer one(look at the reddish fretboard). My guitar has flatwound 12s with lowish action. My guitar doesn't fight me when I play it. I know my limits on it. It can sound uneven but if I were to upgrade to another guitar with the same materials it would cost too much. I am satisfied with what I have.</p>
+        <p className='guitar-paragraph'>Yup. An AF75. This guitar has similar dimensions and the same materials as the popular ES-175. Maple back and sides, mahogany neck, rosewood fretboard. The newer AF75s are pathetic though. Laurel, linden and walnut. Not good. The one in the image looks like a new one(look at the reddish fretboard). My guitar has flatwound 12s with lowish action. It doesn't fight me when I play it. I know my limits on it. It can sound uneven but if I were to upgrade to another guitar with the same materials it would cost too much. I am satisfied with what I have.</p>
         <img loading="lazy" id='focusrite'src='../images/focusrite.png'/>
         <h2 id='fr-h2'>Focusrite Solo</h2>
         <div className='my-focusrite'>
