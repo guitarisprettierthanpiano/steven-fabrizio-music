@@ -1,7 +1,18 @@
 [
+    {   
+        "title":"The Days of Wine and Roses",
+        "url":"https://www.youtube.com/embed/IAZK1DQPy8w",
+        "text":"My Foolish Heart was one of the songs that got me into the American Songbook. I did not grow up around music like this. I discovered it later. The way Bill Evans handled this song is gorgeous. Beautiful and inspiring. My approach to this song is based off of his. Lots of diminished and altered dominant chords setting up the bright happyish ending. I didn't realize how fast I was playing but I was excited and having fun.",
+        "influences":{
+            "Bill Evans 1962":"https://youtu.be/g-jsW61e_-w",
+            "Bill Evans 1964":"https://youtu.be/2Dl4Gteq_Ik",
+            "Tony Bennett 1977":"https://youtu.be/TljjMBDJjMc?t=261"
+        },
+        "date":"May 5, 2021"
+    },
     {
         "title":"My Foolish Heart",
-        "url":"https://www.youtube.com/embed/2Dl4Gteq_Ik",
+        "url":"https://www.youtube.com/embed/bLATTFCmhcE",
         "text":"My Foolish Heart was one of the songs that got me into the American Songbook. I did not grow up around music like this. I discovered it later. The way Bill Evans handled this song is gorgeous. Beautiful and inspiring. My approach to this song is based off of his. Lots of diminished and altered dominant chords setting up the bright happyish ending. I didn't realize how fast I was playing but I was excited and having fun.",
         "influences":{
             "Bill Evans 1962":"https://youtu.be/g-jsW61e_-w",
@@ -12,7 +23,7 @@
     },
     {
         "title":"When I Fall In Love",
-        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "url":"https://www.youtube.com/embed/zOuQFf9b3J4",
         "text":"This song had to grow on me. Sometimes you listen to something a number of times thinking you don't like it but feeling like you want to hear it again. I think I heard a nice melody with some players playing bad chords under it. I changed the beginning harmony to try to make the melody pop out into the foreground. I think the beginning of the song needs some unexpected sounds so when you finally get to the 'And the moment I can feel that you feel that way too' it has an emphatic effect. I tried this concept I heard about 'setting up a bottom' to the song. I tried it with a F pedalish effect since I'm in Eb. I think F is such a good note because it is an ambigous note in the key. It happens to also be the lowest note on guitar in Eb. I think this concept can be very effective and I will need to investigate this more.",
         "influences":{
             "Nat King Cole 1957":"https://youtu.be/jnRzMETUUAI",
@@ -23,7 +34,7 @@
     },
     {
         "title":"Almost Blue",
-        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "url":"https://www.youtube.com/embed/YCsI5QR8mPs",
         "text":"Sometimes I do songs that people don't see coming. This is probably one of them. It is an Elvis Costello song. But it was played by Chet Baker and more recently Elvis Costello's wife, Diana Krall. So it isn't exactly unknown in the jazz world. I don't play songs in minor keys that much because I think there is a droning brooding feeling that can get boring that isn't there with major keys. But sometimes it feels good to just wallow in a sound like that. This is such a long and slow song though that there isn't really enough time for an improsived solo through a second time. But who says that you can't just play the song as it is and end it?",
         "influences":{
             "Chet Baker 1987":"https://youtu.be/z4PKzz81m5c",
@@ -33,7 +44,7 @@
     },
     {
         "title":"Isn't It Romantic",
-        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "url":"https://www.youtube.com/embed/c2As88Jo_5Q",
         "text":"This is one of those songs that is both fun to play and easy to listen to. It seems to be hard to mess it up because so many musicians and singers do a great job with this tune. I decided to play a short improsived intro. I was singing in my head \"Isn't it romantic, isn't it romantic...\" before launching into the melody. Instead of playing an improvised solo for the second time through E, I key change to G and it sounds refreshing to me. Both keys are brightish and compliment each other well. I tried to bring us back to my original key to finish it.",
         "influences":{
             "Oscar Peterson 1959":"https://youtu.be/CMQVFXaFhJ8",
@@ -44,7 +55,7 @@
     },
     {
         "title":"What's New",
-        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "url":"https://www.youtube.com/embed/1FD_7xwp6v8",
         "text":"I don't like this song. Why? It has to be the hardest song I've played. So many key changes that modulate harshly. The lyrics are boring. Everyone plays it in C but I picked A because it is Sinatra's key here. I go to A, C, D, F, Bb multiple times. These are key changes not chord changes! I had to lean so hard on the melody here. Not fun!",
         "influences":{
             "Frank Sinatra 1958":"https://youtu.be/SA64eS8eTEw",
@@ -54,7 +65,7 @@
     },
     {
         "title":"Emily",
-        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "url":"https://www.youtube.com/embed/qJO3NVa1DS0",
         "text":"What a masterpiece of 20th century composition. Every time I hear anyone perform this it sounds fresh and as if I've never heard it before. There isn't a standard key for this song but I think D is so perfect. Such a bright sound that delivers a really crisp melody. It make it sound confident. There is such a surprising yet inviting key change to the VI in bar 9. I can ramble on forever about the genius here but I will say this: playing this song is a delight and it is in my permanent repertoire.",
         "influences":{
             "Tony Bennett 1966":"https://youtu.be/RCwyapWG63Y",
@@ -65,7 +76,7 @@
     },
     {
         "title":"Una Voce Poco Fa",
-        "url":"https://www.youtube.com/embed/_z7X8fbNIkI",
+        "url":"https://www.youtube.com/embed/bwx-HQnohsc",
         "text":"It really bothers me how no one gives opera a chance because it can have the highest highs of not just music but any art form. Bel Canto especially. It was created by properly educated musicians who knew exactly what they were doing. Many arias are constructed like proto-20th century tunes and the first part of Una Voce Poco Fa is one. You can treat it like a jazz standard and that is what I did here. I think the normal key is F but Maria Callas did it a half-step lower and it is the best.",
         "influences":{
             "Anna Moffo":"https://youtu.be/i8CcmMXWmaA",
