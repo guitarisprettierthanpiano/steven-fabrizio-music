@@ -8,7 +8,6 @@ import SongsToDo from './components/songstodo';
 import Contact from './components/contact';
 import Footer from './components/footer';
 
-
 const App: React.FC = () => {
 
     return(
@@ -27,6 +26,6 @@ const App: React.FC = () => {
         <Footer />
     </HashRouter>
     ); 
-}
+};
 
 export default App;
