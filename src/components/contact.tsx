@@ -24,12 +24,12 @@ const Contact: React.FC = () => {
                 id='ethimg'
                 onClick={() => {navigator.clipboard.writeText('0x7589f9D4d028D130AAB826b60ed01cFe41cA9b4D')}}/>
                 <span 
-                onClick={() => {navigator.clipboard.writeText('3GyCuSGvW9vRxRXuWt4Q3g2aaQDEm8UD3X')}}>
-                    3GyCuSGvW9vRxRXuWt4Q3g2aaQDEm8UD3X
+                onClick={() => {navigator.clipboard.writeText('bc1qpjhyw76k9a7nstvl3zrn4rj3y3rm950vzzk9ms')}}>
+                    bc1qpjhyw76k9a7nstvl3zrn4rj3y3rm950vzzk9ms
                 </span>
                 <span
-                onClick={() => {navigator.clipboard.writeText('0x7589f9D4d028D130AAB826b60ed01cFe41cA9b4D')}}>
-                    0x7589f9D4d028D130AAB826b60ed01cFe41cA9b4D
+                onClick={() => {navigator.clipboard.writeText(' 0x85b9C50051009935F743F18F54312E8EAd1a2d91')}}>
+                    0x85b9C50051009935F743F18F54312E8EAd1a2d91
                 </span>
             </div>
         </div>

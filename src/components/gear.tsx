@@ -74,7 +74,7 @@ const Gear: React.FC = () => {
                 </div>
             </div>
         </div>
-        <p className='guitar-paragraph'>Yup. An AF75. This guitar has similar dimensions and the same materials as the popular ES-175. Maple back and sides, mahogany neck, rosewood fretboard. The newer AF75s are pathetic though. Laurel, linden and walnut. Not good. The one in the image looks like a new one(look at the reddish fretboard). My guitar has flatwound 12s with lowish action. It doesn't fight me when I play it. I know my limits on it. It can sound uneven but if I were to upgrade to another guitar with the same materials it would cost too much. I am satisfied with what I have.</p>
+        <p className='guitar-paragraph'>Yup. An AF75. This guitar has similar dimensions and the same materials as the popular ES-175. Maple back and sides, mahogany neck, rosewood fretboard. The newer AF75s are built cheaply. Laurel, linden and walnut. Not good. My guitar has flatwound 12s with lowish action. It doesn't fight me when I play it. I know my limits on it. It can sound uneven but I think it adds charm to it. I would recommend it to anyone who is looking for a versatile electric guitar.</p>
         <img loading="lazy" id='focusrite'src='../images/focusrite.png'/>
         <h2 id='fr-h2'>Focusrite Solo</h2>
         <div className='my-focusrite'>
@@ -83,7 +83,7 @@ const Gear: React.FC = () => {
                 <div className='specs'>
                     <span data-aos='flip-up'>Inputs:</span>
                     <span data-aos='flip-up'>3-pin XLR</span>
-                    <span data-aos='flip-up'>¼" jack</span>
+                    <span data-aos='flip-up'>¼" input jack</span>
                 </div>
                 <div className='specs'>
                     <span data-aos='flip-up'>Outputs:</span>
