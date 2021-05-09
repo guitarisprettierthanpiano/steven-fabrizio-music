@@ -18,6 +18,9 @@ p, span, button, input, textarea, label, a{
 }
 p{
     font-size:24px;
+    
+    text-shadow: 2px 2px rgb(5, 5, 5);
+    text-shadow: 1px 1px rgb(5, 5, 5);
 }
 h1, h2, h3{
     font-weight: 600;
@@ -284,7 +287,7 @@ position: absolute;
     justify-self: start;
 }
 #home-container * a:hover{
-    font-weight: 600;
+    color:white;
 }
 #home-container .blog-container .blog-entry span:last-child{
     color: rgb(209, 209, 209);
@@ -633,7 +636,9 @@ position: absolute;
     letter-spacing: 1px;
 
     background-color: rgba(255, 0, 0, 0.9);
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2),
+                0 3px 6px rgba(0,0,0,0.4);
     max-width: 465px;
 }
 
@@ -789,14 +794,15 @@ position: absolute;
 }
 #contact-container .crypto span:hover{
 
-    text-shadow: 2px 2px rgb(5, 5, 5);
-    text-shadow: 1px 1px rgb(5, 5, 5);
-    font-weight: 600;
-    text-indent: 16px;
+    text-shadow: 1px 1px rgba(5, 5, 5, 0.486);
+    text-indent: 18px;
 
     color: rgba(255, 0, 0, 0.9);
     background-color: white;
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1),
+                0 3px 6px rgba(0,0,0,0.2);
 }
 #contact-container .crypto img:hover{
     transform: scale(1.1)
