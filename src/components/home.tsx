@@ -37,8 +37,8 @@ const Home: React.FC = () => {
                 myNewElement2.setAttribute('loading', 'lazy');
                 myNewElement3.innerText = dataArray[i].text;
                 myNewElement4.classList.add('influences');
-                myNewElement5.innerText = 'Posted on ' 
-                + dataArray[i].date;
+                //myNewElement5.innerText = 'Posted on ' 
+                //+ dataArray[i].date;
 
                 /*getting data from an object in json file below */
                 let myKeysArray:any[] = 
@@ -74,7 +74,7 @@ const Home: React.FC = () => {
                 myNewPost.appendChild(myNewElement2);
                 myNewPost.appendChild(myNewElement3);
                 myNewPost.appendChild(myNewElement4);
-                myNewPost.appendChild(myNewElement5);
+                //myNewPost.appendChild(myNewElement5);
                 myParentDiv.appendChild(myNewPost);
             };
         });

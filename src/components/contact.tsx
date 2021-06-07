@@ -19,17 +19,17 @@ const Contact: React.FC = () => {
                 </p>
                 <img src='../images/bitcoin.png'
                 id='btcimg'
-                onClick={() => {navigator.clipboard.writeText('3GyCuSGvW9vRxRXuWt4Q3g2aaQDEm8UD3X')}}/>
+                onClick={() => {navigator.clipboard.writeText('16Gsw7iHTFygVKpxxMJEM92chHVLoozjVJ')}}/>
                 <img src='../images/ethereum.png'
                 id='ethimg'
-                onClick={() => {navigator.clipboard.writeText('0x7589f9D4d028D130AAB826b60ed01cFe41cA9b4D')}}/>
+                onClick={() => {navigator.clipboard.writeText('0x3e1c53d6f61559e97fdb46a83f95307bac8a11b7')}}/>
                 <span 
-                onClick={() => {navigator.clipboard.writeText('bc1qpjhyw76k9a7nstvl3zrn4rj3y3rm950vzzk9ms')}}>
-                    bc1qpjhyw76k9a7nstvl3zrn4rj3y3rm950vzzk9ms
+                onClick={() => {navigator.clipboard.writeText('16Gsw7iHTFygVKpxxMJEM92chHVLoozjVJ')}}>
+                    16Gsw7iHTFygVKpxxMJEM92chHVLoozjVJ
                 </span>
                 <span
-                onClick={() => {navigator.clipboard.writeText(' 0x85b9C50051009935F743F18F54312E8EAd1a2d91')}}>
-                    0x85b9C50051009935F743F18F54312E8EAd1a2d91
+                onClick={() => {navigator.clipboard.writeText(' 0x3e1c53d6f61559e97fdb46a83f95307bac8a11b7')}}>
+                    0x3e1c53d6f61559e97fdb46a83f95307bac8a11b7
                 </span>
             </div>
         </div>
