@@ -5,7 +5,7 @@ const Home: React.FC = () => {
 
     //i will be generating my blog content from a json file storing the raw text and links.
     const GenerateBlogs = () => {
-        fetch('../blog-data.json')
+        fetch('./././blog-data.json')
         .then(function(response) {
             return response.json();
         })

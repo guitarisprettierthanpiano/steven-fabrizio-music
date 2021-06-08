@@ -543,7 +543,7 @@ position: absolute;
     padding: 20px;
     min-height: 500px;
 
-    background-image: url(../images/billy.jpg);
+    background-image: url(./././images/billy.jpg);
     background-size: cover;
     
     box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0, 0.6);
@@ -558,7 +558,7 @@ position: absolute;
     padding: 20px;
     min-height: 500px;
     
-    background-image: url(../images/maria.jpg);
+    background-image: url(./././images/maria.jpg);
     background-size: cover;
 
     box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0, 0.6);
@@ -571,7 +571,7 @@ position: absolute;
     grid-template-rows: 50px 50px 1fr;
     padding: 20px;
     
-    background-image: url(../images/tony.jpg);
+    background-image: url(./././images/tony.jpg);
     background-size: cover;
     min-height: 500px ;
     box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0, 0.6);

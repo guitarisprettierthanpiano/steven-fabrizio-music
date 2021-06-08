@@ -6,7 +6,7 @@ const SongsToDo: React.FC = () => {
 
     //i made a json file because i want to easily add and remove songs over time.
     const FetchListsOfSongs = () => {
-        fetch('../song-list-data.json')
+        fetch('./././song-list-data.json')
         .then(function(response) {
             return response.json();
         })
