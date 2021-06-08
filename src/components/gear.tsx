@@ -5,7 +5,7 @@ const Gear: React.FC = () => {
     return( 
     <div id='gear-container'>
         <h1>Gear</h1>
-        <img loading='lazy' id='af75' src='../images/guitar3.png'/>
+        <img loading='lazy' id='af75' src='./././images/guitar3.png'/>
         <h2 id='af75-h2'>2010 Ibanez AF75 BS</h2>
         <div className='my-guitar'> 
             <div className='body'>
@@ -75,7 +75,7 @@ const Gear: React.FC = () => {
             </div>
         </div>
         <p className='guitar-paragraph'>Yup. An AF75. This guitar has similar dimensions and the same materials as the popular ES-175. Maple back and sides, mahogany neck, rosewood fretboard. The newer AF75s are built cheaply. Laurel, linden and walnut. Not good. Avoid those. My guitar has flatwound 12s with lowish action. It doesn't fight me when I play it. I know my limits on it. It can sound uneven but I think it adds charm to it. I would recommend it to anyone who is looking for a versatile electric guitar.</p>
-        <img loading="lazy" id='focusrite'src='../images/focusrite.png'/>
+        <img loading="lazy" id='focusrite'src='./././images/focusrite.png'/>
         <h2 id='fr-h2'>Focusrite Solo</h2>
         <div className='my-focusrite'>
             <div className='fr-specs'>

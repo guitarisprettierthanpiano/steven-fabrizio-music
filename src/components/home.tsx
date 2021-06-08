@@ -87,11 +87,11 @@ const Home: React.FC = () => {
 
     //i'm using this array to get the image name i'm changing the src to. using a counter to get the get array[counter] element.
     const imageArray: Array<string> = [
-        '../images/2atimeforlove.png',
-        '../images/0imafooltowantyou.png',
-        '../images/1emilyB.png',
-        '../images/whitecircle.png',
-        '../images/blackcircle.png',
+        './././images/2atimeforlove.png',
+        './././images/0imafooltowantyou.png',
+        './././images/1emilyB.png',
+        './././images/whitecircle.png',
+        './././images/blackcircle.png',
         'One Man',
         'One Guitar',
         'One Vision'
@@ -99,13 +99,13 @@ const Home: React.FC = () => {
 
     let [count, setCount] = 
     useState<number>(() => 0); 
-    let [imageURL, setImageURL] = useState<string>(() => '../images/2atimeforlove.png');
+    let [imageURL, setImageURL] = useState<string>(() => './././images/2atimeforlove.png');
     let [firstcircle, setFirstCircle] = 
-    useState<string>(() => '../images/whitecircle.png')
+    useState<string>(() => './././images/whitecircle.png')
     let [secondcircle, setSecondCircle] = 
-    useState<string>(() => '../images/blackcircle.png')
+    useState<string>(() => './././images/blackcircle.png')
     let [thirdcircle, setThirdCircle] = 
-    useState<string>(() => '../images/blackcircle.png')
+    useState<string>(() => './././images/blackcircle.png')
     let [h1Text, setH1Text] =
     useState<string>(() => 'One Man');
 
