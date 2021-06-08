@@ -95,7 +95,7 @@ const SongsToDo: React.FC = () => {
 
     return(
     <div id='songs-container'>
-        <h1>Songs I Want To Do</h1>
+        <h1>Songs To Do</h1>
         <p className='songs-p'>These are some songs that I'm interested in learning. Some I will put on YouTube. Some of them I may only fool around with. I don't discriminate against any genres or eras. There is only good and bad music. There have always been and always will be inspired musicians making great art.</p>
         <div className='songs'>
             <div className='bill'
