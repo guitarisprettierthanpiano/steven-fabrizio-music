@@ -214,11 +214,11 @@ nav ul li:hover{
 }
 #home-container .main-section button:hover,
 #home-container .main-section .carousel-indicator img:hover{
-    transform: scale(1.05);
+    transform: scale(1.04);
 }
 #home-container .main-section button:active,
 #home-container .main-section .carousel-indicator img:active{
-    transform:translateY(2px);
+    transform:translateY(1px);
 }
 #home-container .main-section .carousel-indicator{
 transform: translate(-50%, -50%);
@@ -571,7 +571,7 @@ position: absolute;
     grid-template-rows: 50px 50px 1fr;
     padding: 20px;
     
-    background-image: url(./././images/tony.jpg);
+    background-image: url(./././images/tony.png);
     background-size: cover;
     min-height: 500px ;
     box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0, 0.6);
@@ -590,7 +590,7 @@ position: absolute;
 #songs-container .songs .tony:hover,
 #songs-container .songs .bill:hover,
 #songs-container .songs .maria:hover{
-    box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0); 
+    box-shadow: inset 150px 00px 800px 150px rgba(0, 0, 0); 
     
     transition: all 0s; 
 }
