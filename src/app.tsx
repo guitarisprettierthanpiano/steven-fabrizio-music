@@ -7,6 +7,7 @@ import Gear from './components/gear';
 import SongsToDo from './components/songstodo';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import BetterHome from './components/betterhome'
 
 const App: React.FC = () => {
 
@@ -15,7 +16,7 @@ const App: React.FC = () => {
         <Header />
         <Switch>
             <Route exact path='/' 
-            component={Home}/>
+            component={BetterHome}/>
             <Route path='/gear' 
             component={Gear}/>
             <Route path='/songs' 
@@ -23,7 +24,7 @@ const App: React.FC = () => {
             <Route path='/contact' 
             component={Contact}/>
         </Switch>
-        <Footer />
+        <div className='foooootergoeshere'/>
     </HashRouter>
     ); 
 };
