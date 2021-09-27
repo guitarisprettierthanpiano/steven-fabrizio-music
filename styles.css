@@ -34,8 +34,10 @@ h1, h2, h3{
 #root{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto auto;
+    grid-template-rows: auto auto;
     max-width: 100vw;
+
+    background-color: rgb(255, 255, 255);
 }
 
 /*HEADER & FOOTER*/
@@ -45,9 +47,8 @@ nav{
     grid-template-rows: 50px 50px;
 
     justify-items: center;
-    background-image: url(/images/1emilyB.png);
 
-    min-height: 200px;
+    background-color: grey;
 }
 nav h2{
     grid-row: 1;
@@ -58,7 +59,7 @@ nav h2{
 nav ul{
     grid-row: 2;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 
     list-style-type: none;
     display: grid;
@@ -74,7 +75,7 @@ nav ul li{
     border: 3px white double;
     text-align: center;
     text-justify: center;
-    font-size: 24px;
+    font-size: 14px;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
 }
 nav ul li:hover{
@@ -319,9 +320,9 @@ position: absolute;
 #gear-container h1{
     grid-row: 1;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     font-size: 48px;
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -345,7 +346,7 @@ position: absolute;
 
     
     padding: 10px;
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -356,7 +357,7 @@ position: absolute;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -402,7 +403,7 @@ position: absolute;
 }
 #gear-container .guitar-paragraph{
     grid-row: 5;
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -430,7 +431,7 @@ position: absolute;
 
     
     padding: 10px;
-    background-color:  rgba(255, 0, 0, 0.9);
+    background-color: grey;
 
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -440,7 +441,7 @@ position: absolute;
 
     display: grid;
     
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -466,7 +467,7 @@ position: absolute;
 #gear-container .focusrite-paragraph{
     
     grid-row: 9;
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -492,11 +493,11 @@ position: absolute;
     grid-row: 1;
     grid-column: 1;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     font-size: 48px;
     
     
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
 
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -505,7 +506,7 @@ position: absolute;
     grid-row: 2;
     grid-column: 1;
     
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
 
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -632,16 +633,14 @@ position: absolute;
 #songs-container * li:hover{
     transform: scale(1.05);
 
-    text-shadow: 2px 2px rgb(5, 5, 5);
     text-shadow: 1px 1px rgb(5, 5, 5);
-    font-weight: 600;
+    font-weight: 500;
     text-indent: 8px;
     letter-spacing: 1px;
 
     background-color: rgba(255, 0, 0, 0.9);
 
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2),
-                0 3px 6px rgba(0,0,0,0.4);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     max-width: 465px;
 }
 
@@ -660,18 +659,18 @@ position: absolute;
     grid-row: 1;
     grid-column: 1;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     font-size: 48px;
     
     
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
 }
 #contact-container .contact-desc{
     
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -695,7 +694,7 @@ position: absolute;
     justify-items: center;
     align-items: center;
 
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     
     box-shadow: 0 3px 6px rgba(0,0,0,0.1),
                 0 3px 6px rgba(0,0,0,0.2);
@@ -746,7 +745,7 @@ position: absolute;
     font-size: 20px;
 }
 #contact-container .crypto{
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: grey;
     max-width: 850px;
     min-width: 650px;
     margin: 20px;
@@ -814,6 +813,168 @@ position: absolute;
 #contact-container .crypto span:active{
     transform:translateY(2px);
 }
+
+
+/* SHOWCASE */
+.sccontainer h1{
+    grid-row: 1;
+    grid-column: 1 / span 2;
+    padding: 10px;
+    font-size: 48px;
+    background-color: grey;
+    
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1),
+                0 3px 6px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+}
+.sccontainer{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(20, 20, 20, .98);
+    margin: 20px;
+}
+.sccontainer * ul{
+    margin: 1px;
+    width: 400px;
+}
+.sccontainer * li{
+    cursor: pointer;
+    list-style-type: none;
+
+    align-self: center;
+    justify-self: center;
+
+    font-size: 18px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.none:hover{
+    text-indent: 2px;
+    letter-spacing: 1px;
+}
+.show{
+    font-weight: 600;
+    text-indent: 2px;
+    letter-spacing: 1px;
+    
+
+    border-radius: 4px;
+    cursor:default!important;
+    color: rgb(10, 10, 10)!important;
+    background-color: rgb(255, 255, 255)!important;
+}
+.sccontainer img{
+    width: 100%;
+    height: 70vh;
+    
+    top: 50%;
+    left: 50%;
+
+    grid-row: 2;
+    grid-column: 1 / span 2;
+  
+    filter:  
+        brightness(100%) 
+        contrast(300%) 
+        invert(0%) 
+        grayscale(100%);
+    align-self: center;
+    justify-self: center;    
+}
+.listcontainer{
+    grid-row: 3;
+    grid-column: 1;
+    border: 1px solid black;
+}
+.audiocontainer{
+    grid-row: 3;
+    grid-column: 2;
+    border: 1px solid black;
+}
+.sccontainer * h2{
+    align-self: center;
+    justify-self: center;
+    
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap;
+    padding-right: 100%;
+    box-sizing: content-box;
+    
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: ticker;
+    animation-name: ticker;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+}
+@-webkit-keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  @keyframes ticker {
+    0% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+
+.showcase-img {
+    height: 70vh;
+    grid-row: 2;
+    grid-column: 1 / span 2;
+    display: grid;
+    place-items: center;
+    color: #ff43ea;
+    position: relative;
+  }
+.showcase-img::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/images/2atimeforlove.png);
+    background-size: cover;
+    filter:  
+        brightness(100%) 
+        contrast(300%) 
+        invert(0%) 
+        grayscale(100%);
+  }
+.showcase-img-inside {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.788);
+    border-radius: 4px;
+
+    text-align: center;
+    text-justify: center;
+  }
+  
+  
+
+
 
 
 /* LAPTOP SIZE */

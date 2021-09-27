@@ -8,6 +8,7 @@ import SongsToDo from './components/songstodo';
 import Contact from './components/contact';
 import Footer from './components/footer';
 import BetterHome from './components/betterhome'
+import Showcase from './components/showcase'
 
 const App: React.FC = () => {
 
@@ -17,6 +18,8 @@ const App: React.FC = () => {
         <Switch>
             <Route exact path='/' 
             component={BetterHome}/>
+            <Route exact path='/showcase' 
+            component={Showcase}/>
             <Route path='/gear' 
             component={Gear}/>
             <Route path='/songs' 

@@ -5,10 +5,14 @@ const Header: React.FC = () => {
 
     return(
     <nav id='top'>
-    <h2>Steven Fabrizio Music</h2>
+    <h2>Steven Fabrizio</h2>
     <ul>
         <NavLink exact activeClassName='active' to='/'>
             <li>Home</li> 
+        </NavLink>
+
+        <NavLink activeClassName='active' to='/showcase'>
+            <li>Listen</li> 
         </NavLink>
 
         <NavLink activeClassName='active' to='/gear'>
@@ -16,7 +20,7 @@ const Header: React.FC = () => {
         </NavLink>
 
         <NavLink activeClassName='active' to='/songs'>
-            <li>Songs</li> 
+            <li>Future Songs</li> 
         </NavLink>
 
         <NavLink activeClassName='active' to='/contact'>
