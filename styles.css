@@ -886,6 +886,8 @@ position: absolute;
 audio{
     grid-column: 1;
     grid-row: 2;
+
+    min-width: 50vw;
 }
 
 .showcase-img {
