@@ -856,8 +856,8 @@ position: absolute;
     padding-right: 10px;
 }
 .none:hover{
-    text-indent: 1px;
-    letter-spacing: 1px;
+    text-indent: 0px;
+    letter-spacing: 0.5px;
 }
 .show{
     font-weight: 600;
