@@ -23,6 +23,8 @@ const CompletedSongs: React.FC = () => {
 
 
     function ClickYnF(){
+        StopAudioOnClick()
+
         setYnFClass('show')
         setSoTClass('none')
         setWAYDClass('none')
@@ -42,6 +44,8 @@ const CompletedSongs: React.FC = () => {
         setTSoYSDisplay('none')
     }
     function ClickSoT(){
+        StopAudioOnClick()
+
         setYnFClass('none')
         setSoTClass('show')
         setWAYDClass('none')
@@ -61,6 +65,8 @@ const CompletedSongs: React.FC = () => {
         setTSoYSDisplay('none')
     }
     function ClickWAYD(){
+        StopAudioOnClick()
+
         setYnFClass('none')
         setSoTClass('none')
         setWAYDClass('show')
@@ -80,6 +86,8 @@ const CompletedSongs: React.FC = () => {
         setTSoYSDisplay('none')
     }
     function ClickWIFiL(){
+        StopAudioOnClick()
+
         setYnFClass('none')
         setSoTClass('none')
         setWAYDClass('none')
@@ -99,6 +107,8 @@ const CompletedSongs: React.FC = () => {
         setTSoYSDisplay('none')
     }
     function ClickAB(){
+        StopAudioOnClick()
+
         setYnFClass('none')
         setSoTClass('none')
         setWAYDClass('none')
@@ -118,6 +128,8 @@ const CompletedSongs: React.FC = () => {
         setTSoYSDisplay('none')
     }
     function ClickIIR(){
+        StopAudioOnClick()
+
         setYnFClass('none')
         setSoTClass('none')
         setWAYDClass('none')
@@ -137,6 +149,8 @@ const CompletedSongs: React.FC = () => {
         setTSoYSDisplay('none')
     }
     function ClickE(){
+        StopAudioOnClick()
+
         setYnFClass('none')
         setSoTClass('none')
         setWAYDClass('none')
@@ -156,6 +170,8 @@ const CompletedSongs: React.FC = () => {
         setTSoYSDisplay('none')
     }
     function ClickTSoYS(){
+        StopAudioOnClick()
+
         setYnFClass('none')
         setSoTClass('none')
         setWAYDClass('none')
@@ -175,14 +191,21 @@ const CompletedSongs: React.FC = () => {
         setTSoYSDisplay('inline')
     }
 
+    //this function runs every time a song name is clicked on. it will create an array of every audio element and stop it if it is playing. 
+    function StopAudioOnClick(){
+        let audioElements = document.querySelectorAll('audio');
+        for (let i = 0; i < audioElements.length; i++){
+            audioElements[i].pause();
+            audioElements[i].currentTime = 0;
+        }
+    }
+
     return(
-    <>
 
     <div className='sccontainer'>
         <h1>Showcase</h1>
 
         <div className="showcase-img">
-
             
             <div className="showcase-img-inside">
 
@@ -228,7 +251,7 @@ const CompletedSongs: React.FC = () => {
                         <div className='audio1'
                             style={{ 'display': `${YnFDisplay}` }}>
                             <h2>Young and Foolish</h2>
-                            <audio controls>
+                            <audio controls> 
                                 <source src='src\components\1.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
@@ -302,7 +325,6 @@ const CompletedSongs: React.FC = () => {
 
     </div>
 
-    </>
     );
 };
 

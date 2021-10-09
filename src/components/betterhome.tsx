@@ -3,9 +3,11 @@ import * as React from 'react';
 const BetterHome: React.FC = () => {
     
     return(
-    <div>
+    <>
+    <h1>New Album</h1>
+    
         
-    </div>
+    </>
     );
 };
 
