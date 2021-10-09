@@ -203,7 +203,7 @@ const CompletedSongs: React.FC = () => {
     return(
 
     <div className='sccontainer'>
-        <h1>Showcase</h1>
+        <h1>Listen</h1>
 
         <div className="showcase-img">
             
@@ -213,12 +213,28 @@ const CompletedSongs: React.FC = () => {
                     <ul>
                         <li className={YnFClass}
                             onClick={() => ClickYnF()}>
-                            Young and Foolish
+                            A Dream Is A Wish Your Heart Makes
                         </li>
                         <li className={SoTClass}
                             onClick={() => ClickSoT()}>
-                            Some Other Time
+                            Beautiful Love
                         </li>
+                        <li className={ABClass}
+                            onClick={() => ClickAB()}>
+                            Emily
+                        </li>
+                        <li className={TSoYSClass}
+                            onClick={() => ClickTSoYS()}>
+                            How Deep Is The Ocean?
+                        </li> 
+                        <li className={EClass}
+                            onClick={() => ClickE()}>
+                            I'm A Fool To Want You
+                        </li>
+                        <li className={IIRClass}
+                            onClick={() => ClickIIR()}>
+                            My Foolish Heart
+                        </li> 
                         <li className={WAYDClass}
                             onClick={() => ClickWAYD()}>
                             What Are You Doing The Rest of Your Life?
@@ -227,22 +243,6 @@ const CompletedSongs: React.FC = () => {
                             onClick={() => ClickWIFiL()}>
                             When I Fall In Love
                         </li>
-                        <li className={ABClass}
-                            onClick={() => ClickAB()}>
-                            Almost Blue
-                        </li>
-                        <li className={IIRClass}
-                            onClick={() => ClickIIR()}>
-                            Isn't It Romantic?
-                        </li>
-                        <li className={EClass}
-                            onClick={() => ClickE()}>
-                            Emily
-                        </li>
-                        <li className={TSoYSClass}
-                            onClick={() => ClickTSoYS()}>
-                            The Shadow of Your Smile
-                        </li>
                     </ul>
                 </div>
         </div>
@@ -250,18 +250,18 @@ const CompletedSongs: React.FC = () => {
 
                         <div className='audio1'
                             style={{ 'display': `${YnFDisplay}` }}>
-                            <h2>Young and Foolish</h2>
+                            <h2>A Dream Is A Wish Your Heart Makes</h2>
                             <audio controls> 
-                                <source src='src\components\1.mp3' type='audio/mpeg'>
+                                <source src='src\components\4adreamisawish.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
 
                         <div className='audio2'
-                            style={{ 'display': `${SoTDisplay}` }}>
-                            <h2>Some Other Time</h2>
+                            style={{ 'display': `${SoTDisplay}` }}> 
+                            <h2>Beautiful Love</h2>
                             <audio controls>
-                                <source src='src\components\2.mp3' type='audio/mpeg'>
+                                <source src='src\components\3beautifullove.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -270,7 +270,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${WAYDDisplay}` }}>
                             <h2>What Are You Doing The Rest of Your Life?</h2>
                             <audio controls>
-                                <source src='src\components\3.mp3' type='audio/mpeg'>
+                                <source src='src\components\5whatrudoingtherest.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -279,43 +279,43 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${WIFiLDisplay}` }}>
                             <h2>When I Fall In Love</h2>
                             <audio controls>
-                                <source src='src\components\4.mp3' type='audio/mpeg'>
+                                <source src='src\components\1whenifall.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
 
                         <div className='audio5'
                             style={{ 'display': `${ABDisplay}` }}>
-                            <h2>Almost Blue</h2>
+                            <h2>Emily</h2>
                             <audio controls>
-                                <source src='src\components\5.mp3' type='audio/mpeg'>
+                                <source src='src\components\2emily.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
 
                         <div className='audio6'
                             style={{ 'display': `${IIRDisplay}` }}>
-                            <h2>Isn't It Romantic?</h2>
+                            <h2>My Foolish Heart</h2>
                             <audio controls>
-                                <source src='src\components\6.mp3' type='audio/mpeg'>
+                                <source src='src\components\8myfoolish.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
 
                         <div className='audio7'
                             style={{ 'display': `${EDisplay}` }}>
-                            <h2>Emily</h2>
+                            <h2>I'm A Fool To Want You</h2>
                             <audio controls>
-                                <source src='src\components\7.mp3' type='audio/mpeg'>
+                                <source src='src\components\6imafool.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
 
                         <div className='audio8'
                             style={{ 'display': `${TSoYSDisplay}` }}>
-                            <h2>The Shadow of Your Smile</h2>
+                            <h2>How Deep Is The Ocean</h2>
                             <audio controls>
-                                <source src='src\components\8.mp3' type='audio/mpeg'>
+                                <source src='src\components\7howdeep.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
