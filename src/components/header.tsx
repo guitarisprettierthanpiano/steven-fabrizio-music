@@ -1,30 +1,32 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 const Header: React.FC = () => {
+
 
     return(
     <nav id='top'>
     <h2>Steven Fabrizio</h2>
     <ul>
         <NavLink exact activeClassName='active' to='/'>
-            <li>Home</li> 
+        home
         </NavLink>
 
         <NavLink activeClassName='active' to='/showcase'>
-            <li>Listen</li> 
+            listen
         </NavLink>
 
         <NavLink activeClassName='active' to='/gear'>
-            <li>Gear</li> 
+gear
         </NavLink>
 
         <NavLink activeClassName='active' to='/songs'>
-            <li>Future Songs</li> 
+future songs
         </NavLink>
 
         <NavLink activeClassName='active' to='/contact'>
-            <li>Contact</li> 
+contact
         </NavLink>  
     </ul>
     </nav>
