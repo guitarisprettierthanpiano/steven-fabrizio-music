@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const BetterHome: React.FC = () => {
     
@@ -9,15 +10,17 @@ const BetterHome: React.FC = () => {
         <h1>New Album <span>Cloud Taster</span> Available Now</h1>
 
         <div className='home-album-buttons'>
-            <img src='../album.png'></img>
+            <img src='../album.png'></img> 
             <div className='home-buttons'>
-                <button>Listen</button>
+                    <NavLink activeClassName='active' to='/showcase'>
+                            <button>Listen</button>
+                    </NavLink>
                 <button>Buy</button>
             </div>
         </div>
 
         <h2>Some Other Time (Video)</h2>
-
+ 
         <iframe 
             width="100%" height="100%"
             src="https://www.youtube.com/embed/JR--I7zmunw" 

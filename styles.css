@@ -55,7 +55,7 @@ nav{
     margin-left: 10px;
     margin-right: 10px;
 
-    height: 15vh;
+    height: 20vh;
 
     justify-items: center;
 
@@ -595,7 +595,7 @@ position: absolute;
     grid-template-rows: 50px 50px 1fr;
     padding: 20px;
     
-    background-image: url(./././images/tony.png);
+    background-image: url(./././images/tony.jpg);
     background-size: cover;
     min-height: 500px ;
     box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0, 0.6);
@@ -914,7 +914,7 @@ audio{
     height: 1fr;
     grid-row: 2;
     width: 100vw;
-    height: 85vh;
+    height: 80vh;
 
     display: grid;
     grid-template-rows: auto auto;
@@ -954,7 +954,7 @@ audio{
 .home-container{
     display: grid;
 
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: repeat(auto,auto);
     grid-template-columns: 1fr;
 
     align-items: center;
@@ -967,13 +967,12 @@ audio{
     text-transform: uppercase;
     font-weight: 600;
 
-    margin-top: 10vh;
-    margin-bottom:5vh;
+    margin-top: 6vh;
 }
 .home-container h1 span{
     font-size: 36px;
     font-style: italic;
-
+    font-weight: 600;
     margin-top: 10px;
     margin-bottom:10px;
 }
@@ -985,8 +984,6 @@ audio{
     max-height: 85vh;
 
     margin-bottom: 10vh;
-
-    background-color: rgb(255, 145, 167);
 }
 .home-album-buttons img{
     height: 80%;
@@ -1002,10 +999,9 @@ audio{
 
     align-items: center;
     justify-items: center;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
 
-    background-color: darkgray;
 }
 .home-buttons button{
     text-align: center;
@@ -1032,8 +1028,18 @@ audio{
 .home-buttons button:hover{
     background-color: rgb(194, 194, 194);
 }
+
+.home-container h2{
+    margin-top: 15vh;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+}
+
 iframe{
-    width: 80%;
+    width: 800px;
+    height: 500px;
     margin-top: 10px;
     margin-bottom:10px;
 }
