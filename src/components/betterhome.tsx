@@ -17,6 +17,7 @@ const BetterHome: React.FC = () => {
         </div>
 
         <h2>Some Other Time (Video)</h2>
+
         <iframe 
             width="100%" height="100%"
             src="https://www.youtube.com/embed/JR--I7zmunw" 
@@ -26,6 +27,7 @@ const BetterHome: React.FC = () => {
             frameBorder="0">
 
         </iframe>
+        
     </div>
         
     </>

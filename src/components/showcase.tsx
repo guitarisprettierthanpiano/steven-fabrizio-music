@@ -203,7 +203,6 @@ const CompletedSongs: React.FC = () => {
     return(
 
     <div className='sccontainer'>
-        <h1>Listen</h1>
 
         <div className="showcase-img">
             
