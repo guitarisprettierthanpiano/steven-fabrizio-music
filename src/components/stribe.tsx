@@ -2,12 +2,20 @@ import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const Stribe: React.FC = () => {
-    
+
+    function AddSpace(){ 
+        let ccnvalue = (document.getElementById('ccn') as HTMLInputElement).value;
+        if ((ccnvalue.length === 4) || 
+            (ccnvalue.length === 9) || 
+            (ccnvalue.length === 14)){
+                (document.getElementById('ccn') as HTMLInputElement).value = (document.getElementById('ccn') as HTMLInputElement).value + ' ' 
+        }
+    }
+
     function ClickBack(){
         document.querySelector('nav').style.display = "grid";
     }
     
-    const regex = new RegExp("[0-9\s]{13,19}")
 
     return(
         <> 
@@ -21,6 +29,19 @@ const Stribe: React.FC = () => {
                         Back
                     </span>
                 </NavLink>
+
+                <h4>Pay Steven's Fake Company</h4>
+                <div className='cart'>
+                    <span>Cloud Taster</span>
+                    <span>$500</span>
+                </div>
+                <div className='footerthing'>
+                    <span>Powered by 
+                        <span>Stribe</span>
+                    </span>
+                    <span>Terms</span>
+                    <span>Privacy</span>
+                </div>
             </div>
 
             <div className='right-half'>
@@ -36,30 +57,41 @@ const Stribe: React.FC = () => {
                     <input type="email" id="email" name="email"/> 
 
                     <label htmlFor='card'>Card information</label>
+
+                    <div className='ccstuff'>
                     <input
                     onKeyPress={(event) => {
                         if (!/[0-9]/.test(event.key)) {
                             event.preventDefault();
                         }
-                    }}
+                    }} 
+                    onChange={()=>AddSpace()}
                     maxLength={19}
-                    placeholder="xxxx xxxx xxxx xxxx"
+                    placeholder="4242 4242 4242 4242"
                     autoComplete={`cc-number`}
                     inputMode={`numeric`}
                     id="ccn" 
                     name='card'
-                    pattern={`(\d{4} *\d{4} *\d{4} *\d{4})`}
                     type={`tel`}
                     />
-
-                    <label htmlFor='name'>Name on card</label>
-                    <input type="text" id="name" name="name" placeholder=""/>
 
                     <input className="CheckoutInput CheckoutInput--tabularnums Input Input--empty" 
                     autoComplete="cc-exp" autoCorrect="off" 
                     spellCheck="false" 
                     id="cardExpiry" 
                     name="cardExpiry" type="tel" aria-label="Expiration" placeholder="MM / YY" aria-invalid="false" value=""/>
+
+                            <input className="CheckoutInput CheckoutInput--tabularnums Input Input--empty"
+                                autoComplete="cc-exp" autoCorrect="off"
+                                spellCheck="false" type="tel" aria-label="Expiration" 
+                                id='cardcvc'
+                                placeholder="CVC" aria-invalid="false" value="" />
+                    </div>
+
+
+                    <label htmlFor='name'>Name on card</label>
+                    <input type="text" id="name" name="name" placeholder="" />
+
 
                     <label htmlFor='Country'>Country or region</label>
                     <select name="Country"> 
@@ -305,7 +337,7 @@ const Stribe: React.FC = () => {
                     </select>
                     <input type="text" id="zip" name="zip" placeholder="ZIP"/>
                 
-                    <input className='submit' type="submit" value="Submit"/>
+                    <input className='submit' type="submit" value="Pay $500"/>
                 </form>
             </div>
         </div>

@@ -34,6 +34,7 @@ const BetterHome: React.FC = () => {
         <h2>Some Other Time (Video)</h2>
  
         <iframe 
+            loading='lazy'
             width="100%" height="100%"
             src="https://www.youtube.com/embed/JR--I7zmunw" 
             title="YouTube video player" 

@@ -1059,10 +1059,10 @@ iframe{
     padding:0;
     background-color: white!important;
     height: 100vh;
-    width:100vw;
+    width: 100vw;
 
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
 }
 .stribe-container *{
@@ -1080,18 +1080,17 @@ iframe{
 }
 .left-half{
     grid-column: 1;
+    max-width: 50vw;
     background-color: rgb(247, 247, 247);
-
-    padding: 30px;
 }
 .right-half{
     grid-column: 2;
-
-    padding:30px;
+    max-width: 50vw;
 
 }
 .right-half form{
     display: grid;
+    grid-template-rows: repeat(auto,auto);
     grid-template-columns: 1fr;
     justify-items:center;
 }
@@ -1110,6 +1109,26 @@ form label{
     padding:0;
     padding-left: 16px;
 }
+.right-half form .ccstuff{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    max-width: 50vw;
+}
+.ccstuff #ccn{
+    grid-row: 1;
+    grid-column: 1 / 2;
+}
+.ccstuff #cardcvc{
+    grid-row: 2;
+    grid-column: 2;
+    max-width: 25vw;
+}
+.ccstuff #cardExpiry{
+    grid-row: 2;
+    grid-column: 1;
+    max-width: 25vw;
+}
 
 input[type=text], select {
     width: 100%;
@@ -1120,7 +1139,6 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-  
 input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -1131,7 +1149,6 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-  
 input[type=submit]:hover {
     background-color: #45a049;
 }
