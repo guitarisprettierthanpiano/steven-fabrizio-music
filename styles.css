@@ -900,6 +900,8 @@ position: absolute;
     text-justify:center;
 
     border-radius: 6px;
+
+    color: rgba(0, 0, 0, 0)!important;
     
 }
 .audio1, .audio2, .audio3, .audio4, .audio5, .audio6, .audio7, .audio8{
