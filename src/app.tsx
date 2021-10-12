@@ -9,6 +9,7 @@ import Contact from './components/contact';
 import Footer from './components/footer';
 import BetterHome from './components/betterhome'
 import Showcase from './components/showcase'
+import Stribe from './components/stribe'
 
 const App: React.FC = () => {
 
@@ -26,6 +27,8 @@ const App: React.FC = () => {
             component={SongsToDo}/>
             <Route path='/contact' 
             component={Contact}/>
+            <Route path='/stribe' 
+            component={Stribe}/>
         </Switch>
         <div className='foooootergoeshere'/>
     </HashRouter>

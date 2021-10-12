@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { NavLink } from 'react-router-dom';
 
+function ClickBuy(){
+    document.querySelector('nav').style.display = "none";
+}
 const BetterHome: React.FC = () => {
     
     return(
@@ -12,15 +15,19 @@ const BetterHome: React.FC = () => {
         <div className='home-album-buttons'>
             <img src='./././album.png'></img> 
             <div className='home-buttons'>
-                <NavLink activeClassName='active' to='/showcase'>
+                <NavLink 
+                activeClassName='active' 
+                to='/showcase'>
                     <button>
                         Listen
                     </button>
                 </NavLink>
-                <button id='buy-button'
-                onClick = {() => console.log('Checkout')}>
-                    Buy
-                </button>
+
+                <NavLink activeClassName='active' to='/stribe' onClick={ () => ClickBuy()}>
+                    <button>
+                        Buy
+                    </button>
+                </NavLink>
             </div>
         </div>
 
