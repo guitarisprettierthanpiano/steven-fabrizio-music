@@ -12,10 +12,15 @@ const BetterHome: React.FC = () => {
         <div className='home-album-buttons'>
             <img src='../album.png'></img> 
             <div className='home-buttons'>
-                    <NavLink activeClassName='active' to='/showcase'>
-                            <button>Listen</button>
-                    </NavLink>
-                <button>Buy</button>
+                <NavLink activeClassName='active' to='/showcase'>
+                    <button>
+                        Listen
+                    </button>
+                </NavLink>
+                <button id='buy-button'
+                onClick = {() => console.log('Checkout')}>
+                    Buy
+                </button>
             </div>
         </div>
 
