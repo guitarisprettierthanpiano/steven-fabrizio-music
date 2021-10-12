@@ -570,6 +570,8 @@ position: absolute;
     background-size: cover;
     
     box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0, 0.6);
+
+    filter:grayscale(50%);
 }
 #songs-container .songs .maria{
     grid-row: 2;
@@ -586,6 +588,8 @@ position: absolute;
 
 
     box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0, 0.6);
+
+    filter:grayscale(50%);
 }
 #songs-container .songs .tony{
     grid-row: 3;
@@ -599,6 +603,8 @@ position: absolute;
     background-size: cover;
     min-height: 500px ;
     box-shadow: inset 0px 0px 800px 150px rgba(0, 0, 0, 0.6);
+
+    filter:grayscale(50%);
 }
 #songs-container .songs * p{
     font-size: 24px;
