@@ -53,7 +53,7 @@ const Stribe: React.FC = () => {
                         </h4>
                     </div>
 
-                    <label htmlFor='email'>Enter your email:</label>
+                    <label htmlFor='email'>Email</label>
                     <input type="email" id="email" name="email"/> 
 
                     <label htmlFor='card'>Card information</label>
@@ -75,26 +75,42 @@ const Stribe: React.FC = () => {
                     type={`tel`}
                     />
 
-                    <input className="CheckoutInput CheckoutInput--tabularnums Input Input--empty" 
-                    autoComplete="cc-exp" autoCorrect="off" 
+                    <input 
+                    autoComplete="cc-exp" 
+                    autoCorrect="off" 
                     spellCheck="false" 
-                    id="cardExpiry" 
-                    name="cardExpiry" type="tel" aria-label="Expiration" placeholder="MM / YY" aria-invalid="false" value=""/>
+                    id="cardExpiry"
+                    name="cardExpiry" 
+                    type="tel"  
+                    placeholder="MMYY"  
+                    onKeyPress={(event) => {
+                        if (!/[0-9]/.test(event.key)) {
+                            event.preventDefault();
+                        }
+                    }} 
+                    maxLength={4}/>
 
                             <input className="CheckoutInput CheckoutInput--tabularnums Input Input--empty"
                                 autoComplete="cc-exp" autoCorrect="off"
                                 spellCheck="false" type="tel" aria-label="Expiration" 
                                 id='cardcvc'
-                                placeholder="CVC" aria-invalid="false" value="" />
+                                placeholder="CVC" aria-invalid="false"                     onKeyPress={(event) => {
+                                    if (!/[0-9]/.test(event.key)) {
+                                        event.preventDefault();
+                                    }
+                                }} 
+                                maxLength={3} />
                     </div>
 
 
                     <label htmlFor='name'>Name on card</label>
-                    <input type="text" id="name" name="name" placeholder="" />
+                    <input type="text" id="name" name="name" placeholder="" /> 
 
 
+    
                     <label htmlFor='Country'>Country or region</label>
-                    <select name="Country"> 
+                    <div className='CoR'>
+                    <select name="Country"  id='country'> 
                     <option value="Afghanistan">Afghanistan</option> 
                     <option value="Albania">Albania</option> 
                     <option value="Algeria">Algeria</option> 
@@ -335,9 +351,20 @@ const Stribe: React.FC = () => {
                     <option value="Zambia">Zambia</option> 
                     <option value="Zimbabwe">Zimbabwe</option>
                     </select>
-                    <input type="text" id="zip" name="zip" placeholder="ZIP"/>
+
+                    <input type="text" 
+                    id="zip" 
+                    name="zip" 
+                    placeholder="ZIP"
+                    onKeyPress={(event) => {
+                        if (!/[0-9]/.test(event.key)) {
+                            event.preventDefault();
+                        }
+                    }} 
+                    maxLength={5}/>
+                    </div>
                 
-                    <input className='submit' type="submit" value="Pay $500"/>
+                    <input className='submit' type="submit" value="Pay $500.00"/>
                 </form>
             </div>
         </div>

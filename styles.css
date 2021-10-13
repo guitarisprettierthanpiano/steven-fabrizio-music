@@ -1071,8 +1071,9 @@ iframe{
     color: rgba(26,26,26,.9);
     font-weight: 400;
     font-size: 16px;
+    text-justify: center;
 
-    padding-top: 10px;
+    padding-top: 2vh;
 }
 .stribe-container * .submit{
     color: rgb(172, 172, 172);
@@ -1080,13 +1081,12 @@ iframe{
 }
 .left-half{
     grid-column: 1;
-    max-width: 50vw;
+    width: 50vw;
     background-color: rgb(247, 247, 247);
 }
 .right-half{
     grid-column: 2;
-    max-width: 50vw;
-
+    width: 50vw;
 }
 .right-half form{
     display: grid;
@@ -1094,65 +1094,162 @@ iframe{
     grid-template-columns: 1fr;
     justify-items:center;
 }
+form{
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
 form label{
     justify-self: start;
-    padding-left: 30px;
 }
+
+.form-header{
+    display: grid;
+    align-content: start;
+    justify-content: start;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#email{
+    box-shadow: 0 0 0 1px #e0e0e0, 
+                0 2px 4px 0 rgb(0 0 0 / 7%), 
+                0 1px 1.5px 0 rgb(0 0 0 / 5%);
+    border: none;
+    text-justify: center;
+
+    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s;
+    transition-property: box-shadow, color, filter;
+    transition-duration: 0.08s, 0.08s, 50000s;
+    transition-timing-function: ease-in, ease-in, ease;
+    transition-delay: 0s, 0s, 0s;
+}
+
 .right-half form input, .right-half form select{
     height: 36px;
-    width: 40vw;
+    width: 100%;
 }
 .right-half form select{
     font-size: 16px;
     text-justify: start;
     margin:0;
     padding:0;
-    padding-left: 16px;
 }
+
 .right-half form .ccstuff{
+    
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    max-width: 50vw;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    width:100%;
+
+
+    box-shadow: 0 0 0 1px #e0e0e0, 
+                0 2px 4px 0 rgb(0 0 0 / 7%), 
+                0 1px 1.5px 0 rgb(0 0 0 / 5%);
+    
 }
 .ccstuff #ccn{
     grid-row: 1;
-    grid-column: 1 / 2;
+    grid-column: 1 / span 2;
+
+    margin:0px;
+    padding: 0px;
+    border: none;
+
+    border: 1px rgba(243, 243, 243, 0.5) groove;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
 }
 .ccstuff #cardcvc{
     grid-row: 2;
     grid-column: 2;
-    max-width: 25vw;
+    margin:0px;
+    padding: 0px;
+    max-width:20vw;
+
+    border: 1px rgba(243, 243, 243, 0.5) groove;
+    border-bottom: none;
+    border-top: none;
+    border-right: none;
 }
 .ccstuff #cardExpiry{
     grid-row: 2;
     grid-column: 1;
-    max-width: 25vw;
+    margin:0px;
+    padding: 0px;
+    max-width:20vw;
+
+    border: none;
 }
 
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+#name{
+    max-width:40vw;
+
+    margin:0px;
+    padding: 0px;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+
+    box-shadow: 0 0 0 1px #e0e0e0, 
+    0 2px 4px 0 rgb(0 0 0 / 7%), 
+    0 1px 1.5px 0 rgb(0 0 0 / 5%);
 }
-input[type=submit]:hover {
-    background-color: #45a049;
+
+.CoR{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 0px;
+    margin: 0px;
+
+    box-shadow: 0 0 0 1px #e0e0e0, 
+    0 2px 4px 0 rgb(0 0 0 / 7%), 
+    0 1px 1.5px 0 rgb(0 0 0 / 5%);
+
 }
-  
+#country{
+    grid-row: 1;
+    grid-column: 1;
+    text-indent: 6px;
+
+    margin: 0px;
+    padding: 0px;
+    border: none;
+
+    border: 1px rgba(243, 243, 243, 0.5) groove;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+#zip{
+    grid-row: 2;
+    grid-column: 1;
+
+    margin:0px;
+    padding: 0px;
+    border: none;
+}
+
+input{
+    text-indent: 10px;
+    text-justify: center;
+}
 
 
 /* LAPTOP SIZE */
