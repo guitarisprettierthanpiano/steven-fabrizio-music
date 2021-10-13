@@ -21,23 +21,28 @@ const Stribe: React.FC = () => {
         <> 
         <div className='stribe-container'>
             <div className='left-half'>
-                <NavLink 
-                activeClassName='active' 
-                to='/'
-                onClick={()=>ClickBack()}>
-                    <span>
+                <span id='stribe-top'>
+                    <NavLink 
+                    activeClassName='active' 
+                    to='/'
+                    onClick={()=>ClickBack()}>
+                        <span id='back'>
                         Back
-                    </span>
-                </NavLink>
+                        </span>
+                    </NavLink>
+                Steven's Fake Company
+                </span>
 
-                <h4>Pay Steven's Fake Company</h4>
-                <div className='cart'>
-                    <span>Cloud Taster</span>
-                    <span>$500</span>
+                <h4 id='stribe-h4'>Pay Steven's Fake Company</h4>
+                <span id='cart'>$500.00 $0.00</span>
+                <div id='order'>
+                    <span id='spot1'>Cloud Taster</span>
+                    <span id='spot2'>$0.00</span>
+                    <span id='spot3'>Qty 1</span>
                 </div>
-                <div className='footerthing'>
+                <div id='footerthing'>
                     <span>Powered by 
-                        <span>Stribe</span>
+                        <span className='stribe'>Stribe</span>
                     </span>
                     <span>Terms</span>
                     <span>Privacy</span>
@@ -364,7 +369,7 @@ const Stribe: React.FC = () => {
                     maxLength={5}/>
                     </div>
                 
-                    <input className='submit' type="submit" value="Pay $500.00"/>
+                    <input className='submit' id='submit-btn' type="submit" value="Pay $500.00"/>
                 </form>
             </div>
         </div>
