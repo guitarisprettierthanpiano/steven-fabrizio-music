@@ -25,16 +25,17 @@ const Stribe: React.FC = () => {
                     <NavLink 
                     activeClassName='active' 
                     to='/'
-                    onClick={()=>ClickBack()}>
+                    onClick={()=>ClickBack()}
+                    id='nav-stribe'>
                         <span id='back'>
-                        Back
+                        ← Back
                         </span>
                     </NavLink>
                 Steven's Fake Company
                 </span>
 
                 <h4 id='stribe-h4'>Pay Steven's Fake Company</h4>
-                <span id='cart'>$500.00 $0.00</span>
+                <span id='cart'><del>$15.00</del> $0.00</span>
                 <div id='order'>
                     <span id='spot1'>Cloud Taster</span>
                     <span id='spot2'>$0.00</span>
@@ -42,15 +43,15 @@ const Stribe: React.FC = () => {
                 </div>
                 <div id='footerthing'>
                     <span>Powered by 
-                        <span className='stribe'>Stribe</span>
+                        <span className='stribe'>stribe</span>
                     </span>
-                    <span>Terms</span>
-                    <span>Privacy</span>
+                    <span id='terms'>Terms</span>
+                    <span id='privacy'>Privacy</span>
                 </div>
             </div>
 
             <div className='right-half'>
-                <form action="/action_page.php">
+                <form action="https://cdn.discordapp.com/attachments/840737262044315669/898000311124394004/3beautifullove.mp3"> 
 
                     <div className="form-header">
                         <h4 className="title">
@@ -58,10 +59,10 @@ const Stribe: React.FC = () => {
                         </h4>
                     </div>
 
-                    <label htmlFor='email'>Email</label>
+                    <label htmlFor='email' id='email-label'>Email</label>
                     <input type="email" id="email" name="email"/> 
 
-                    <label htmlFor='card'>Card information</label>
+                    <label htmlFor='card' id='card-label'>Card information</label>
 
                     <div className='ccstuff'>
                     <input
@@ -108,12 +109,12 @@ const Stribe: React.FC = () => {
                     </div>
 
 
-                    <label htmlFor='name'>Name on card</label>
+                    <label htmlFor='name' id='name-label'>Name on card</label>
                     <input type="text" id="name" name="name" placeholder="" /> 
 
 
     
-                    <label htmlFor='Country'>Country or region</label>
+                    <label htmlFor='Country' id='country-label'>Country or region</label>
                     <div className='CoR'>
                     <select name="Country"  id='country'> 
                     <option value="Afghanistan">Afghanistan</option> 
@@ -369,7 +370,9 @@ const Stribe: React.FC = () => {
                     maxLength={5}/>
                     </div>
                 
-                    <input className='submit' id='submit-btn' type="submit" value="Pay $500.00"/>
+                    <button className='submit' id='submit-btn' title='You do not need to fill in the above information!'> 
+                        Pay $0.00
+                    </button>
                 </form>
             </div>
         </div>

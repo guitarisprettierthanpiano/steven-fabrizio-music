@@ -13,7 +13,7 @@ const BetterHome: React.FC = () => {
         <h1>New Album <span>Cloud Taster</span> Available Now</h1>
 
         <div className='home-album-buttons'>
-            <img src='./././album.png'></img> 
+            <img src='./././images/album.png'></img> 
             <div className='home-buttons'>
                 <NavLink 
                 activeClassName='active' 
@@ -23,7 +23,8 @@ const BetterHome: React.FC = () => {
                     </button>
                 </NavLink>
 
-                <NavLink activeClassName='active' to='/stribe' onClick={ () => ClickBuy()}>
+                <NavLink activeClassName='active' to='/stribe' 
+                onClick={ () => ClickBuy()}>
                     <button>
                         Buy
                     </button>

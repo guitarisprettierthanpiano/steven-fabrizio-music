@@ -63,8 +63,9 @@ nav{
 }
 nav h2{
     grid-row: 1;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
 
     text-shadow: none;
     align-self: center;
@@ -89,7 +90,7 @@ nav ul *{
     text-justify: center;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 14px;
     color: rgb(168, 168, 168);
 }
@@ -868,6 +869,7 @@ position: absolute;
 .sccontainer * li{
     cursor: pointer;  
     list-style-type: none;
+    font-weight: 500;
 
     align-self: center;
     justify-self: center;
@@ -884,7 +886,6 @@ position: absolute;
     letter-spacing: 0.5px;
 }
 .show{
-    font-weight: 600;
     text-indent: 2px;
     letter-spacing: 1px;
     
@@ -1065,13 +1066,14 @@ iframe{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+
 }
 .stribe-container *{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
     line-height: 1.3;
     color: rgba(26,26,26,.9);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     text-justify: center;
 
     padding-top: 2vh;
@@ -1087,8 +1089,10 @@ iframe{
     padding-bottom: 20vh;
     padding-left: 8vw;
     padding-right: 8vw;
+    max-width: 600px;
 
 
+    justify-self: end;
     display: grid;
     grid-template-rows: auto auto auto auto 1fr;
     grid-template-columns: 1fr;
@@ -1096,23 +1100,38 @@ iframe{
 #stribe-top{
     grid-row: 1;
     padding-bottom: 20px;
+    font-weight: 600;
 }
 #back{
     cursor: pointer;
-    padding-right: 10px;
+    padding-right: 20px;
+    font-weight: 600;
+    opacity: 0.8;
 }
+#back:hover{
+    opacity: 1;
+}
+a{
+    text-decoration: none;
+}
+
+
 #stribe-h4{
     grid-row: 2;
     padding-bottom: 0px;
+    opacity: 0.6;
+    font-weight: 600;
 }
-#cart{
+#cart, #cart *{
     grid-row: 3;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: 600;
     padding-bottom: 30px;
 }
+
 #order{
     grid-row: 4;
+    max-width: 600px;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1121,20 +1140,35 @@ iframe{
 #order #spot1{
     grid-row: 1;
     grid-column: 1;
+    font-weight: 600;
 }
 #order #spot2{
     grid-row: 1;
     grid-column: 2;
     justify-self: end;
+    font-weight: 600;
 }
 #order #spot3{
     grid-row: 2;
     grid-column: 1 / span 2;
-    color: grey;
+    opacity: 0.6;
 }
+
 #footerthing{
     grid-row: 5;
     align-self: end;
+}
+.stribe{
+    font-weight: 700;
+    padding-left: 4px;
+}
+#footerthing *{
+    font-size: 14px;
+    padding-right: 20px;
+    opacity: 0.8;
+}
+#privacy, #terms{
+    cursor: pointer;
 }
 
 
@@ -1155,6 +1189,9 @@ iframe{
 form{
     padding-left: 8vw;
     padding-right: 8vw;
+    justify-self: start;
+
+    max-width: 600px;
 }
 form label{
     justify-self: start;
@@ -1170,6 +1207,10 @@ form label{
     justify-self: start;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 0.6; /* Firefox */
+  }
+
 #email{
     box-shadow: 0 0 0 1px #e0e0e0, 
                 0 2px 4px 0 rgb(0 0 0 / 7%), 
@@ -1177,12 +1218,6 @@ form label{
     border: none;
     text-justify: center;
     padding-bottom: 10px;
-
-    transition: box-shadow .08s ease-in,color .08s ease-in,filter 50000s;
-    transition-property: box-shadow, color, filter;
-    transition-duration: 0.08s, 0.08s, 50000s;
-    transition-timing-function: ease-in, ease-in, ease;
-    transition-delay: 0s, 0s, 0s;
 }
 
 .right-half form input, .right-half form select{
@@ -1190,7 +1225,7 @@ form label{
     width: 100%;
 }
 .right-half form select{
-    font-size: 16px;
+    font-size: 14px;
     text-justify: start;
     margin:0;
     padding:0;
@@ -1306,6 +1341,36 @@ form label{
     border: none;
 }
 
+#submit-btn{
+    width: 100%;
+    margin-top:20px;
+    height: 50px;
+    padding:0px;
+    text-align: center;
+    text-justify: center;
+    cursor: pointer;
+
+    border-radius: 4px;
+
+    border:none;
+    box-shadow: none;
+
+    background-color: rgb(0, 116, 212);
+    color: rgba(255, 255, 255, 0.6);
+
+    font-weight: 600;
+    font-size: 16px;
+}
+#submit-btn:hover{
+    color: white;
+} 
+
+
+#email-label, #name-label, #country-label, #card-label{
+    font-weight: 600;
+    opacity: .9;
+    font-size: 14px;
+}
 
 input{
     text-indent: 10px;
