@@ -52,20 +52,19 @@ nav{
     display: grid;
     grid-template-rows: 1fr 1fr;
 
-    margin-left: 10px;
-    margin-right: 10px;
 
     height: 20vh;
 
     justify-items: center;
 
-    background-color: rgb(10, 12, 12);
+    background-color: rgb(20, 29, 32);
+
 }
 nav h2{
     grid-row: 1;
     font-size: 20px;
     font-weight: 400;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 
     text-shadow: none;
     align-self: center;
@@ -1008,8 +1007,8 @@ audio{
 
     align-items: center;
     justify-items: center;
-    padding-top: 30vh;
-    padding-bottom: 30vh;
+    padding-top: 24vh;
+    padding-bottom: 24vh;
 
 }
 .home-buttons button{
@@ -1026,7 +1025,7 @@ audio{
     padding: 21px 34px;
     letter-spacing: 3px;
 
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -1061,7 +1060,7 @@ iframe{
     height: 100vh;
     width: 100vw;
 
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(251, 251, 251);
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1114,7 +1113,6 @@ iframe{
 a{
     text-decoration: none;
 }
-
 
 #stribe-h4{
     grid-row: 2;
@@ -1216,8 +1214,7 @@ form label{
                 0 2px 4px 0 rgb(0 0 0 / 7%), 
                 0 1px 1.5px 0 rgb(0 0 0 / 5%);
     border: none;
-    text-justify: center;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
 }
 
 .right-half form input, .right-half form select{
@@ -1258,7 +1255,7 @@ form label{
     padding: 0px;
     border: none;
 
-    border: 1px rgba(243, 243, 243, 0.5) groove;
+    border: 1px rgba(231, 231, 231, 0.5) groove;
     border-top: none;
     border-right: none;
     border-left: none;
@@ -1271,7 +1268,7 @@ form label{
     padding: 0px;
     max-width:20vw;
 
-    border: 1px rgba(243, 243, 243, 0.5) groove;
+    border: 1px rgb(209, 209, 209, 0.5) groove;
     border-bottom: none;
     border-top: none;
     border-right: none;
@@ -1291,7 +1288,7 @@ form label{
 
     margin:0px;
     padding: 0px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
     border: none;
 
     box-shadow: 0 0 0 1px #e0e0e0, 
@@ -1373,8 +1370,11 @@ form label{
 }
 
 input{
-    text-indent: 10px;
-    text-justify: center;
+    text-indent:10px;
+}
+input:focus{
+    outline:groove 3px rgba(0, 183, 255, 0.3);
+    z-index: 3;
 }
 
 

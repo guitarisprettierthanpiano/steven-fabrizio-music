@@ -31,11 +31,11 @@ const Stribe: React.FC = () => {
                         ← Back
                         </span>
                     </NavLink>
-                Steven's Fake Company
+                Steven's Company
                 </span>
 
-                <h4 id='stribe-h4'>Pay Steven's Fake Company</h4>
-                <span id='cart'><del>$15.00</del> $0.00</span>
+                <h4 id='stribe-h4'>Pay Steven's Company</h4>
+                <span id='cart'><del>$14.99</del> $0.00</span>
                 <div id='order'>
                     <span id='spot1'>Cloud Taster</span>
                     <span id='spot2'>$0.00</span>
