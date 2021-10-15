@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
-import ContactForm from '../src/components/subcomponents/contactform'
+import ContactForm from './contactform'
 
 const Contact: React.FC = () => {
 

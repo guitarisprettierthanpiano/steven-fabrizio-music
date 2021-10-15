@@ -51,13 +51,28 @@ nav{
     grid-row: 1;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.9);
 
 
     height: 20vh;
 
     justify-items: center;
 
-    background-color: rgb(20, 29, 32);
+    background-color: rgb(9, 14, 19);
+
+    /*this is based off of https://projects.verou.me/css3patterns/#starry-night */
+    background-image:
+    radial-gradient(rgba(255, 255, 255, 0), 
+    rgba(8, 21, 24, .1) 2px, transparent 40px),
+    radial-gradient(rgba(255, 255, 255, 0), 
+    rgba(7, 18, 20, .1) 1px, transparent 20px),
+    radial-gradient(rgba(255, 255, 255, 0), 
+    rgba(22, 58, 65,.1) 2px, transparent 40px),
+    radial-gradient(rgba(27, 61, 52, 0.295), 
+    rgba(12, 18, 20,.05) 2px, transparent 10px);
+
+    background-size: 150px 350px, 150px 50px, 150px 150px, 150px 150px;
+    background-position: 480 0, 40px 60px, 130px 270px, 70px 100px;
 
 }
 nav h2{
@@ -91,7 +106,7 @@ nav ul *{
     text-decoration: none;
     letter-spacing: 2px;
     font-size: 14px;
-    color: rgb(168, 168, 168);
+    color: rgb(165, 165, 165);
 }
 nav ul *:hover{
     color: white;
@@ -946,6 +961,7 @@ audio{
         contrast(300%) 
         invert(0%) 
         grayscale(100%)
+        blur(1px)
   }
 .showcase-img-inside {
     position: relative;
@@ -1205,8 +1221,8 @@ form label{
     justify-self: start;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    opacity: 0.6; /* Firefox */
+::placeholder { 
+    opacity: 0.6;
   }
 
 #email{

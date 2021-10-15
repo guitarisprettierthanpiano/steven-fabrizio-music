@@ -251,7 +251,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${YnFDisplay}` }}>
                             <h2>A Dream Is A Wish Your Heart Makes</h2>
                             <audio controls> 
-                                <source src='src\components\4adreamisawish.mp3' type='audio/mpeg'>
+                                <source src='./././audio\Bdream.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -260,7 +260,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${SoTDisplay}` }}> 
                             <h2>Beautiful Love</h2>
                             <audio controls>
-                                <source src='src\components\3beautifullove.mp3' type='audio/mpeg'>
+                                <source src='./././audio\Cbeautiful.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -269,7 +269,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${WAYDDisplay}` }}>
                             <h2>What Are You Doing The Rest of Your Life?</h2>
                             <audio controls>
-                                <source src='src\components\5whatrudoingtherest.mp3' type='audio/mpeg'>
+                                <source src='./././audio\5whatrudoingtherest.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -278,7 +278,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${WIFiLDisplay}` }}>
                             <h2>When I Fall In Love</h2>
                             <audio controls>
-                                <source src='src\components\1whenifall.mp3' type='audio/mpeg'>
+                                <source src='./././audio\1whenifall.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -287,7 +287,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${ABDisplay}` }}>
                             <h2>Emily</h2>
                             <audio controls>
-                                <source src='src\components\2emily.mp3' type='audio/mpeg'>
+                                <source src='./././audio\Aemily.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -296,7 +296,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${IIRDisplay}` }}>
                             <h2>My Foolish Heart</h2>
                             <audio controls>
-                                <source src='src\components\8myfoolish.mp3' type='audio/mpeg'>
+                                <source src='./././audio\8myfoolish.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -305,7 +305,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${EDisplay}` }}>
                             <h2>I'm A Fool To Want You</h2>
                             <audio controls>
-                                <source src='src\components\6imafool.mp3' type='audio/mpeg'>
+                                <source src='./././audio\6imafool.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -314,7 +314,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${TSoYSDisplay}` }}>
                             <h2>How Deep Is The Ocean</h2>
                             <audio controls>
-                                <source src='src\components\7howdeep.mp3' type='audio/mpeg'>
+                                <source src='./././audio\7howdeep.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
