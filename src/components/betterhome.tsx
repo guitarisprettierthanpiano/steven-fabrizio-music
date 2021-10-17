@@ -50,14 +50,24 @@ const BetterHome: React.FC = () => {
         
     <div className='about-album'>
         <h1>ABOUT CLOUD TASTER</h1>
-        <p>The vibrations of the strings. The sustained ringing of the sound holes. Even the smell of wood polish. This is why I can't leave this instrument alone.</p><br/>
-        <p>This album is just a man with his guitar. Nothing written out and pre-planned. Play through the song once and a second time very freely. Improvise the entire thing. I added a tiny bit of reverb and that is it.</p><br/>
-        <p>This whole Covid-19 thing gave me the time to really sit down and work on my weaknesses on the instrument. It is a tricky instrument that only spending a lot of time with it can you get comfortable with it's peculiarities. Learning to improvise over a song's structure is such a pleasure.</p>
-        <p>The songs I've picked here for some reason or another have stuck to me. </p>
-        <p></p>
+
+<p>
+                    The vibrations of the strings. The sustained ringing of the sound holes. Even the smell of wood polish. This is why I can't leave the guitar alone. It is such a blessing to be able to play personally satisfying music on an instrument.
+                    </p><br />
+
+<p>
+                    This album is just a man with his guitar. Nothing written out or pre-planned. Improvise around each note as it comes. No tricks. Play through the melody once and again freely. The only modification was adding slight reverb. Mistakes are intentionally left in.</p><br/>
+
+<p>
+                    There isn't a reason for picking the songs that I did. I know a lot of songs but these came out when I sat down ready to play. I thought of keys I hadn't yet played in and picked songs that sound good in those keys. Enjoy the album!</p><br/>
+
+<p>
+                    Steven</p>
+    <img loading='lazy' src='./././images/1emilyB.png'></img>
+    <img loading='lazy' src='./././images/0imafooltowantyou.png'></img>
     </div>
-    </div>
-        
+
+    </div>   
     </>
     );
 };

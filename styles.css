@@ -1061,12 +1061,35 @@ audio{
     font-weight: 500;
 }
 
-iframe{
-    width: 800px;
-    height: 500px;
-    margin-top: 10px;
-    margin-bottom:10px;
+.about-album{
+    margin-top: 30vh;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto, auto);
+    width: 90vw;
+
+    align-self: center;
+    justify-self: center;
+
 }
+.about-album h1{
+    margin-bottom: 4vh;
+    justify-self: center;
+}
+.about-album img{
+    width: 90vw;
+    max-height: 100vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    filter:  
+        brightness(100%) 
+        contrast(300%) 
+        invert(0%) 
+        grayscale(100%)
+        blur(0px)
+}
+
 
 
 /* STRIBE */
