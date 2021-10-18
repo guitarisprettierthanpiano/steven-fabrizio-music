@@ -95,8 +95,6 @@ const SongsToDo: React.FC = () => {
 
     return(
     <div id='songs-container'>
-        <h1>Songs To Do</h1>
-        <p className='songs-p'>This is list of songs I am interested in learning.</p>
         <div className='songs'>
             <div className='bill'
             onMouseEnter={() => StateFunctionA()}
