@@ -990,27 +990,29 @@ audio{
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 600;
+    padding-top: 30px;
+    align-self: center;
+    justify-self: center;
 
-    margin-top: 6vh;
 }
 .home-container h1 span{
     font-size: 36px;
     font-style: italic;
     font-weight: 600;
-    margin-top: 10px;
-    margin-bottom:10px;
 }
 
 .home-album-buttons{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    max-height: 85vh;
 
-    margin-bottom: 10vh;
+    margin: 0px;
+    padding: 0px;
+    width: 90vw;
+    height: auto;
 }
 .home-album-buttons img{
-    height: 80%;
+    height:90%;
     width: auto;
 
     align-self: center;
@@ -1019,12 +1021,10 @@ audio{
 .home-buttons{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 
     align-items: center;
     justify-items: center;
-    padding-top: 24vh;
-    padding-bottom: 24vh;
 
 }
 .home-buttons button{
@@ -1052,6 +1052,12 @@ audio{
 .home-buttons button:hover{
     background-color: rgb(194, 194, 194);
 }
+#listen{
+    grid-row: 2;
+}
+#buy{
+    grid-row: 3;
+}
 
 .home-container h2{
     margin-top: 15vh;
@@ -1062,7 +1068,6 @@ audio{
 }
 
 .about-album{
-    margin-top: 30vh;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -1077,17 +1082,25 @@ audio{
     margin-bottom: 4vh;
     justify-self: center;
 }
+.about-album p{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 20px;
+}
+#steven{
+    margin-bottom: 10vh;
+}
 .about-album img{
     width: 90vw;
-    max-height: 100vh;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
+    max-height: 80vh;
+    margin-bottom: 10vh;
     filter:  
         brightness(100%) 
         contrast(300%) 
         invert(0%) 
         grayscale(100%)
-        blur(0px)
+        blur(0px);
+    border: 2px double rgba(0, 0, 0, 0.9);
 }
 
 

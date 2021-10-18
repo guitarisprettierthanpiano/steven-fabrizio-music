@@ -37,7 +37,7 @@ const Stribe: React.FC = () => {
                 <h4 id='stribe-h4'>Pay Steven Fabrizio Music</h4>
                 <span id='cart'><del>$14.99</del> $0.00</span>
                 <div id='order'>
-                    <span id='spot1'>Cloud Taster</span>
+                    <span id='spot1'>Imprint</span>
                     <span id='spot2'>$0.00</span>
                     <span id='spot3'>Qty 1</span>
                 </div>

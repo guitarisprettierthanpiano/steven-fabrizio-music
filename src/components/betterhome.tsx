@@ -24,12 +24,13 @@ const BetterHome: React.FC = () => {
     <>
 
     <div className='home-container'>
-        <h1>New Album <span>Cloud Taster</span> Available Now</h1>
+        <h1>New Album <span>IMPRINT</span> Available Now</h1>
 
         <div className='home-album-buttons'>
             <img src='./././images/album.png'></img>  
             <div className='home-buttons'>
                 <NavLink 
+                id='listen'
                 activeClassName='active' 
                 to='/showcase'>
                     <button>
@@ -37,7 +38,9 @@ const BetterHome: React.FC = () => {
                     </button>
                 </NavLink>
 
-                <NavLink activeClassName='active' to='/stribe' 
+                <NavLink activeClassName='active' 
+                id='buy'
+                to='/stribe' 
                 onClick={ () => ClickBuy()}>
                     <button>
                         Buy
@@ -49,20 +52,15 @@ const BetterHome: React.FC = () => {
     
         
     <div className='about-album'>
-        <h1>ABOUT CLOUD TASTER</h1>
+        <h1>ABOUT IMPRINT</h1>
+
 
 <p>
-                    The vibrations of the strings. The sustained ringing of the sound holes. Even the smell of wood polish. This is why I can't leave the guitar alone. It is such a blessing to be able to play personally satisfying music on an instrument.
-                    </p><br />
+    This album is just a man with his guitar. Nothing written out or pre-planned. Improvise around each note as it comes. No tricks. Play through the melody once and again freely. The only modification was adding slight reverb. There are surely mistakes and they are left as they are. There isn't a reason for picking the songs that I did. I thought of keys I hadn't yet played in and picked songs that sound good in those keys. Enjoy the album!
+</p><br/><br/>
 
-<p>
-                    This album is just a man with his guitar. Nothing written out or pre-planned. Improvise around each note as it comes. No tricks. Play through the melody once and again freely. The only modification was adding slight reverb. Mistakes are intentionally left in.</p><br/>
-
-<p>
-                    There isn't a reason for picking the songs that I did. I know a lot of songs but these came out when I sat down ready to play. I thought of keys I hadn't yet played in and picked songs that sound good in those keys. Enjoy the album!</p><br/>
-
-<p>
-                    Steven</p>
+<p id='steven'>
+                    Steven</p><br/>
     <img loading='lazy' src='./././images/1emilyB.png'></img>
     <img loading='lazy' src='./././images/0imafooltowantyou.png'></img>
     </div>
