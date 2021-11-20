@@ -218,6 +218,10 @@ const CompletedSongs: React.FC = () => {
                             onClick={() => ClickSoT()}>
                             Beautiful Love
                         </li>
+                        <li className={WAYDClass}
+                            onClick={() => ClickWAYD()}>
+                            Days of Wine and Roses
+                        </li>
                         <li className={ABClass}
                             onClick={() => ClickAB()}>
                             Emily
@@ -232,12 +236,8 @@ const CompletedSongs: React.FC = () => {
                         </li>
                         <li className={IIRClass}
                             onClick={() => ClickIIR()}>
-                            My Foolish Heart
+                            When You Wish Upon A Star
                         </li> 
-                        <li className={WAYDClass}
-                            onClick={() => ClickWAYD()}>
-                            What Are You Doing The Rest of Your Life?
-                        </li>
                         <li className={WIFiLClass}
                             onClick={() => ClickWIFiL()}>
                             When I Fall In Love
@@ -267,9 +267,9 @@ const CompletedSongs: React.FC = () => {
 
                         <div className='audio3'
                             style={{ 'display': `${WAYDDisplay}` }}>
-                            <h2>What Are You Doing The Rest of Your Life?</h2>
+                            <h2>Days of Wine and Roses</h2>
                             <audio controls>
-                                <source src='./././audio\5whatrudoingtherest.mp3' type='audio/mpeg'>
+                                <source src='./././audio\Hdaysofwine.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -278,7 +278,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${WIFiLDisplay}` }}>
                             <h2>When I Fall In Love</h2>
                             <audio controls>
-                                <source src='./././audio\1whenifall.mp3' type='audio/mpeg'>
+                                <source src='./././audio\Dwhenifall.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -294,9 +294,9 @@ const CompletedSongs: React.FC = () => {
 
                         <div className='audio6'
                             style={{ 'display': `${IIRDisplay}` }}>
-                            <h2>My Foolish Heart</h2>
+                            <h2>When You Wish Upon A Star</h2>
                             <audio controls>
-                                <source src='./././audio\8myfoolish.mp3' type='audio/mpeg'>
+                                <source src='./././audio\Gwhenuwish.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -305,7 +305,7 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${EDisplay}` }}>
                             <h2>I'm A Fool To Want You</h2>
                             <audio controls>
-                                <source src='./././audio\6imafool.mp3' type='audio/mpeg'>
+                                <source src='./././audio\Eimafool.mp3' type='audio/mpeg'>
                                 </source>
                             </audio>
                         </div>
@@ -314,8 +314,8 @@ const CompletedSongs: React.FC = () => {
                             style={{ 'display': `${TSoYSDisplay}` }}>
                             <h2>How Deep Is The Ocean</h2>
                             <audio controls>
-                                <source src='./././audio\7howdeep.mp3' type='audio/mpeg'>
-                                </source>
+                                <source src='./././audio\Fhowdeep.mp3' type='audio/mpeg'>
+                                </source> 
                             </audio>
                         </div>
 
@@ -323,7 +323,6 @@ const CompletedSongs: React.FC = () => {
         </div>
 
     </div>
-
     );
 };
 

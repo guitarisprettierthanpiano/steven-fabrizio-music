@@ -51,7 +51,7 @@ const Stribe: React.FC = () => {
             </div>
 
             <div className='right-half'>
-                <form action="https://cdn.discordapp.com/attachments/840737262044315669/898000311124394004/3beautifullove.mp3"> 
+                <form action="./././audio\imprint.7z"> 
 
                     <div className="form-header">
                         <h4 className="title">
